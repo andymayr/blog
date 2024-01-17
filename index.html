@@ -311,6 +311,19 @@
         // ... existing timeline visibility code ...
     });
 </script>
+<script>
+    // Add this inside your script tag
+    document.querySelectorAll('.cv-button').forEach(button => {
+        button.addEventListener('click', (e) => {
+            e.preventDefault();
+            const sectionId = button.getAttribute('href');
+            document.querySelectorAll('.cv-section').forEach(section => {
+                section.style.display = 'none';
+            });
+            document.querySelector(sectionId).style.display = 'block';
+        });
+    });
+</script>
 
 </body>
 </html>
