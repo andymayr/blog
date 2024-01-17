@@ -1,5 +1,5 @@
 /* Reset default browser styles */
-body, h1, h2, h3, p, ul {
+body, h1, h2, h3, p, ul, nav ul li a {
   margin: 0;
   padding: 0;
 }
@@ -13,90 +13,45 @@ body {
   padding: 20px;
 }
 
+/* Navigation Bar Styles */
+nav {
+  background-color: #333; /* Dark background for the nav bar */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #a3c1ad; /* Soft green for hover effect */
+}
+
 header {
   text-align: center;
   margin-bottom: 20px;
   color: #4a90e2; /* Soft blue for header text */
+  /* ... Other header styles ... */
 }
 
-h1 {
-  font-size: 28px;
-  font-weight: bold;
-  color: #a3c1ad; /* Soft green for main headers */
-  text-shadow: 1px 1px 2px #1a1a1a; /* Subtle text shadow */
-}
-
-section {
-  margin-bottom: 20px;
-  background: linear-gradient(to right, #333333, #4b4b4b); /* Linear gradient for sections */
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: inset 0 0 10px #000000; /* Inverse shadow for depth */
-}
-
-h2 {
-  font-size: 24px;
-  font-weight: bold;
-  color: #d1a684; /* Soft copper for sub-headers */
-  margin-bottom: 10px;
-}
-
-article {
-  margin-bottom: 10px;
-}
-
-h3 {
-  font-size: 20px;
-  font-weight: bold;
-  color: #86a6df; /* Soft blue for tertiary headers */
-  margin-bottom: 5px;
-}
-
-ul {
-  list-style: disc;
-  margin-left: 20px;
-}
-
-footer {
-  margin-top: 20px;
-  text-align: center;
-  font-size: 14px;
-  color: #8c8c8c; /* Light grey for footer */
-}
-
-/* Skills and Languages section */
-ul.skills, ul.languages {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding-left: 0;
-  margin-top: 10px;
-}
-
-ul.skills li, ul.languages li {
-  width: 48%;
-  margin-bottom: 5px;
-}
+/* ... Rest of your existing CSS ... */
 
 /* Media queries */
 @media (max-width: 768px) {
-  h1 {
-    font-size: 24px;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
-
-  h3 {
-    font-size: 18px;
-  }
-
-  ul.skills, ul.languages {
-    flex-direction: column;
-  }
-
-  ul.skills li, ul.languages li {
-    width: 100%;
-  }
+  /* ... Your existing media queries ... */
 }
