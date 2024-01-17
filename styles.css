@@ -108,3 +108,15 @@ nav ul li {
 
 /* Additional styles for other sections */
 /* ... */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+footer {
+    z-index: 10; /* Adjust as needed */
+}
+
+
