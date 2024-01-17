@@ -1,21 +1,31 @@
-/* Reset default browser styles */
+/* Reset margins and paddings for consistency */
 body, h1, h2, h3, p, ul, nav ul li a {
   margin: 0;
   padding: 0;
 }
 
-/* Page layout */
+/* Page Layout */
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
   line-height: 1.6;
   background-color: #000000; /* Black background */
-  color: #d9d9d9; /* Soft grey text for a professional look */
+  color: #d9d9d9; /* Soft grey text */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4a90e2; /* Soft blue for header text */
 }
 
 /* Navigation Bar Styles */
 nav {
-  background-color: #333; /* Dark background for the nav bar */
+  background-color: #333; /* Dark background for nav bar */
   color: white;
   text-align: center;
   padding: 10px 0;
@@ -24,67 +34,62 @@ nav {
 nav ul {
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  display: flex; /* Use flexbox for horizontal alignment */
+  justify-content: center; /* Center items horizontally */
+  flex-wrap: wrap; /* Allow items to wrap on small screens */
 }
-body {
-  margin: 0;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-footer {
-  text-align: center;
-  background-color: #f2f2f2; /* A darker shade of white */
-  color: #333; /* Dark text color for visibility */
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
-footer p {
-  margin: 5px 0; /* Adjust spacing as needed */
-}
-
 
 nav ul li {
-  display: inline;
-  margin-right: 20px;
+  margin: 5px 10px; /* Adjust margin for spacing */
 }
 
-nav ul li a {
-  text-decoration: none;
+nav ul li button { /* Style the buttons inside the list */
+  background: none;
+  border: none;
   color: white;
   font-weight: bold;
+  cursor: pointer;
 }
 
-nav ul li a:hover {
+nav ul li button:hover {
   color: #a3c1ad; /* Soft green for hover effect */
 }
 
-header {
+/* Footer Styles */
+footer {
+  background-color: #f2f2f2; /* Darker shade of white */
+  color: #333; /* Dark text color */
   text-align: center;
-  margin-bottom: 20px;
-  color: #4a90e2; /* Soft blue for header text */
-  /* ... Other header styles ... */
-}
-
-/* ... Rest of your existing CSS ... */
-
-/* Media queries */
-@media (max-width: 768px) {
-  /* ... Your existing media queries ... */
-}
-/* Add this rule to the top of your existing styles.css file */
-section {
-  display: none;
-}
-
-/* Your existing CSS styles follow... */
-/* Example: */
-header, nav, footer {
-  /* your existing styles */
-}
-/* ... other styles ... */
+  padding: 
+  10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  }
+  
+  footer p {
+  margin: 5px 0; /* Adjust spacing */
+  }
+  
+  /* Section Styles /
+  section {
+  display: none; / Hidden by default, shown by JavaScript /
+  padding: 20px;
+  background-color: #fff; / White background for sections /
+  color: #333; / Dark text for readability /
+  border-radius: 5px; / Rounded corners for aesthetics /
+  margin-bottom: 30px; / Space between sections */
+  
+  /* Media Queries for Responsive Design /
+  @media (max-width: 768px) {
+  nav ul {
+  flex-direction: column; / Stack items vertically on small screens /
+  align-items: center; / Center items vertically */
+  nav ul li {
+  margin: 5px 0; /* Adjust margin for vertical layout */
+  }
+  
+  body {
+  padding: 10px; /* Reduce padding on smaller screens */
+  }
+  
