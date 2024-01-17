@@ -1,351 +1,110 @@
+/* General Styles */
 body {
-font-family: Arial, sans-serif;
-background-color: #eaeaea;
-color: #333333;
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-display: flex;
-flex-direction: column;
-min-height: 100vh;
-scrollbar-width: thin;
-scrollbar-color: #888 #f1f1f1;
+    font-family: Arial, sans-serif;
+    background-color: #eaeaea;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
 }
-
 
 header {
-background-color: #333;
-color: white;
-padding: 20px 0;
-text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
 }
-
 
 header h1 {
-margin: 0;
-font-size: 2.5em;
-font-weight: 700;
-text-transform: uppercase;
-letter-spacing: 3px;
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
-
 
 /* Navigation */
 nav ul {
-list-style-type: none;
-padding: 0;
-margin: 0;
-background-color: #444;
-text-align: center;
-overflow: hidden;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #444;
+    text-align: center;
+    overflow: hidden;
 }
-
 
 nav ul li {
-display: inline-block;
-margin: 0 5px;
+    display: inline-block;
+    margin: 0 5px;
 }
-
 
 .cv-button {
-padding: 10px 15px;
-background-color: #5c7c7b;
-color: white;
-border: none;
-border-radius: 5px;
-cursor: pointer;
-transition: background-color 0.3s, color 0.3s;
-text-decoration: none;
+    padding: 10px 15px;
+    background-color: #5c7c7b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
 }
-
 
 .cv-button:hover {
-background-color: #4a6664;
+    background-color: #4a6664;
 }
 
-
-/* Sections */
-.cv-section {
-display: none;
-padding: 20px;
-background-color: #ffffff;
-border-radius: 5px;
-margin: 10px 20px;
-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+/* Experience Timeline */
+.experience-timeline {
+    overflow: hidden;
+    position: relative;
+    padding-left: 40px; /* Adjust as needed */
 }
-
-
-.cv-section:target {
-display: block;
-opacity: 1;
-}
-
-
-/* Objective Section */
-.objective-container {
-max-width: 800px;
-margin: 0 auto;
-padding: 20px;
-background: rgba(255, 255, 255, 0.9);
-border-radius: 10px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-transform: translateY(-20px);
-transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-
-.objective-container:hover {
-transform: translateY(-30px);
-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-
-/* Education Timeline /
-.education-timeline, .experience-timeline {
-position: relative;
-padding-left: 40px; / Adjust based on your layout */
-list-style: none;
-}
-
 
 .timeline-item {
-position: relative;
-margin-bottom: 20px; /* Space between items */
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
+.timeline-item.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 .timeline-icon {
-position: absolute;
-left: 0; /* Align icons to the left /
-top: 0;
-background-color: #5c7c7b; / Change as needed */
-color: white;
-border-radius: 50%;
-padding: 5px 10px;
-text-align: center;
-font-size: 1.2em;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #5c7c7b;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 1.2em;
 }
-
 
 .timeline-content {
-background-color: #f0f0f0;
-padding: 15px;
-border-radius: 8px;
-margin-left: 20px; /* Adjust based on icon size */
-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    margin-left: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
-
 
 .timeline-content h3 {
-margin-top: 0;
-color: #333;
-font-size: 1.1em;
+    margin-top: 0;
+    color: #333;
 }
-
 
 .timeline-content span {
-font-style: italic;
-color: #666;
-font-size: 0.9em;
+    font-style: italic;
+    color: #666;
 }
 
-
-/* Optional: Style for company logos /
-.company-logo {
-width: 50px; / Adjust as needed */
-height: auto;
-margin-top: 10px;
-}
-
-
-/* Slideshow Container /
-.slideshow-container {
-max-width: 500px; / Adjust as needed */
-position: relative;
-margin: auto;
-}
-
-
-/* Hide the images by default */
-.mySlides {
-display: none;
-}
-
-
-/* Fading animation */
-.fade {
-animation-name: fade;
-animation-duration: 1.5s;
-}
-
-
-@keyframes fade {
-from {opacity: .4}
-to {opacity: 1}
-}
-
-
-/* Responsive Image Styling */
-.mySlides img {
-width: 100%;
-height: auto;
-}
-
-
-/* Footer Styles /
-footer {
-background-color: #333;
-color: white;
-text-align: center;
-padding: 20px;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; / New typography */
-}
-
-
-footer a {
-color: #a3c1ad;
-text-decoration: none;
-margin: 0 10px;
-}
-
-
-footer a:hover {
-text-decoration: underline;
-color: #ffffff;
-}
-
-
-/* Font Awesome Icons */
-.fab {
-margin-right: 5px;
-}
-
-
-.language-container {
-display: flex;
-justify-content: center;
-align-items: center;
-gap: 20px; /* Space between language items */
-}
-
-
-.language {
-display: flex;
-align-items: center;
-}
-
-
-.language-flag {
-width: 30px; /* Adjust size as needed */
-height: auto;
-margin-right: 10px;
-}
-
-
-/* Back To Top Button */
-#backToTop {
-position: fixed;
-bottom: 20px;
-right: 20px;
-z-index: 9999;
-padding: 10px;
-background-color: #ddd;
-color: #000;
-cursor: pointer;
-border-radius: 5px;
-text-align: center;
-font-size: 14px;
-}
-
-
-#backToTop img {
-width: 30px; /* Adjust as needed */
-height: auto;
-vertical-align: middle;
-margin-right: 5px;
-}
-
-
-#backToTop span {
-vertical-align: middle;
-}
-
-
-/* Responsive adjustments */
-@media screen and (max-width: 600px) {
-.education-timeline, .experience-timeline {
-padding-left: 20px;
-}
-
-
-.timeline-icon {
-    font-size: 1em;
-}
-
-.timeline-content {
-    margin-left: 15px;
-}
-
-}
-.poker-card .card-inner {
-transition: transform 0.6s;
-transform-style: preserve-3d;
-}
-
-
-.poker-card .card-inner:hover {
-transform: rotateY(180deg);
-}
-
-
-.poker-card .card-front, .poker-card .card-back {
-backface-visibility: hidden;
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-}
-
-
-.poker-card .card-front {
-/* Front design of the poker card /
-background-color: white;
-border: 1px solid black;
-border-radius: 10px;
-/ Add any other styling as needed */
-}
-
-
-.poker-card .card-back {
-transform: rotateY(180deg);
-background-color: red;
-background-image: url('https://www.shutterstock.com/image-vector/playing-cards-back-260nw-335546243.jpg'); /* Path to your red and white silhouette image */
-
-
-.experience-timeline {
-overflow: hidden;
-position: relative;
-padding-left: 40px; /* Adjust as needed */
-
-}
-
-
-.timeline-item {
-opacity: 0;
-transform: translateY(30px);
-transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-
-/* Styles for timeline-icon, timeline-content remain the same */
-
-
-color: white;
-border-radius: 10px;
-
-}
-.is-visible {
-opacity: 1;
-transform: translateY(0);
-}
+/* Additional styles for other sections */
+/* ... */
