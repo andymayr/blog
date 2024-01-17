@@ -199,3 +199,25 @@ body {
     scrollbar-width: thin; /* 'auto' or 'thin' */
     scrollbar-color: #888 #f1f1f1; /* Thumb and track color */
 }
+/* CSS for the body content */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full height of the viewport */
+    margin: 0;
+}
+
+/* Main content wrapper */
+.main-content {
+    flex: 1;
+    padding-bottom: 50px; /* Space for the footer */
+}
+
+/* CSS for the footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
