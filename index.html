@@ -191,26 +191,27 @@
         <!-- Visual representations of hobbies, volunteer work, etc., could be included -->
     </div>
 </section>
-<section id="languages" class="cv-section">
-    <h2>Languages</h2>
-    <div class="language-container">
-        <div class="language">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg" alt="Mexican Flag" class="language-flag">
-            <span class="language-name">Spanish - C2</span>
-            <div class="dynamic-text" id="spanish-text">Hola</div>
+ <section id="languages" class="cv-section">
+        <h2>Languages</h2>
+        <div class="language-container">
+            <div class="language">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg" alt="Mexican Flag" class="language-flag">
+                <span class="language-name">Spanish - C2</span>
+                <div class="dynamic-text" id="spanish-text">Hola</div>
+            </div>
+            <div class="language">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg" alt="German Flag" class="language-flag">
+                <span class="language-name">German - C2</span>
+                <div class="dynamic-text" id="german-text">Hallo</div>
+            </div>
+            <div class="language">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/English_language.svg" alt="British/American Flag" class="language-flag">
+                <span class="language-name">English - C1</span>
+                <div class="dynamic-text" id="english-text">Hello</div>
+            </div>
         </div>
-        <div class="language">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg" alt="German Flag" class="language-flag">
-            <span class="language-name">German - C2</span>
-            <div class="dynamic-text" id="german-text">Hallo</div>
-        </div>
-        <div class="language">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/English_language.svg" alt="British/American Flag" class="language-flag">
-            <span class="language-name">English - C1</span>
-            <div class="dynamic-text" id="english-text">Hello</div>
-        </div>
-    </div>
-</section>
+    </section>
+
 <footer>
     <p>Contact Information: <a href="mailto:mayerandreas3@gmail.com">mayerandreas3@gmail.com</a></p>
     <p>Phone: +52 2222393453</p>
@@ -248,23 +249,24 @@
             });
         });
     </script>
-    document.addEventListener('DOMContentLoaded', () => {
-    const greetings = {
-        spanish: ["Hola", "¿Cómo estás?"],
-        german: ["Hallo", "Wie geht's?"],
-        english: ["Hello", "How are you doing?"]
-    };
+   <script>
+        window.onload = function() {
+            const greetings = {
+                spanish: ["Hola", "¿Cómo estás?"],
+                german: ["Hallo", "Wie geht's?"],
+                english: ["Hello", "How are you doing?"]
+            };
 
-    let current = 0;
+            let current = 0;
 
-    setInterval(() => {
-        document.getElementById('spanish-text').textContent = greetings.spanish[current];
-        document.getElementById('german-text').textContent = greetings.german[current];
-        document.getElementById('english-text').textContent = greetings.english[current];
-        
-        current = (current + 1) % greetings.spanish.length;
-    }, 3000); // Change text every 3 seconds
-});
-
+            setInterval(() => {
+                document.getElementById('spanish-text').textContent = greetings.spanish[current];
+                document.getElementById('german-text').textContent = greetings.german[current];
+                document.getElementById('english-text').textContent = greetings.english[current];
+                
+                current = (current + 1) % greetings.spanish.length;
+            }, 3000); // Change text every 3 seconds
+        };
+    </script>
 </body>
 </html>
