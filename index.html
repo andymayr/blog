@@ -1,16 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Andreas Mayer Arriaga - CV</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        section { display: none; } /* Initially hide all sections */
+    </style>
+</head>
 <body>
+    <header>
+        <h1>Andreas Mayer Arriaga</h1>
+    </header>
     <nav>
         <ul>
-            <li><a href="#objective">Objective</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#activities">Activities</a></li>
-            <li><a href="#languages">Languages</a></li>
+            <li><button onclick="showSection('objective')">Objective</button></li>
+            <li><button onclick="showSection('experience')">Experience</button></li>
+            <li><button onclick="showSection('education')">Education</button></li>
+            <li><button onclick="showSection('skills')">Skills</button></li>
+            <li><button onclick="showSection('activities')">Activities</button></li>
+            <li><button onclick="showSection('languages')">Languages</button></li>
         </ul>
     </nav>
-    <!-- Rest of your HTML content -->
+
+    <!-- Your existing sections (Objective, Experience, Education, etc.) go here -->
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('section').forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
 </body>
+
 <!DOCTYPE html>
 <html>
 
