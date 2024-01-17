@@ -1,82 +1,132 @@
-.cv-button {
-    padding: 10px;
-    background-color: #a3c1ad;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    text-transform: uppercase;
+/* Reset default browser styles */
+body, h1, h2, h3, p, ul, nav ul li a {
+  margin: 0;
+  padding: 0;
 }
 
-.cv-button:hover {
-    background-color: #87a394;
+/* Page layout */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #000000; /* Black background */
+  color: #d9d9d9; /* Soft grey text for a professional look */
+  padding: 20px;
 }
 
-.cv-button i {
-    margin-right: 5px;
-}
-
-.cv-section {
-    display: none;
-    padding: 20px;
-    background-color: #f5f5f5;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    transition: opacity 0.3s;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-.cv-section.show {
-    display: block;
-    opacity: 1;
-}
-
-header {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-h1 {
-    font-size: 28px;
-    color: #333;
-}
-
+/* Navigation Bar Styles */
 nav {
-    margin-bottom: 30px;
+  background-color: #333; /* Dark background for the nav bar */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-nav li {
-    display: inline;
-    margin-right: 10px;
+nav ul li {
+  display: inline;
+  margin-right: 20px;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    font-size: 12px;
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 
-footer a {
-    color: #a3c1ad;
+nav ul li a:hover {
+  color: #a3c1ad; /* Soft green for hover effect */
 }
 
-footer a:hover {
-    text-decoration: underline;
+header {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4a90e2; /* Soft blue for header text */
+  /* ... Other header styles ... */
 }
+
+/* ... Rest of your existing CSS ... */
+
+/* Responsive Font Sizes */
+body, h1, h2, h3, p {
+  font-size: 1rem; /* Base font size */
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.4em;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  /* ... Your existing media queries ... */
+}
+
+/* Add this rule to the top of your existing styles.css file */
+section {
+  display: none;
+}
+
+nav ul li {
+  display: block;
+  margin-right: 0;
+  text-align: left;
+}
+
+/* Your existing CSS styles follow... */
+/* Example: */
+header, nav, footer {
+  /* your existing styles */
+}
+
+/* ... other styles ... */
+
+nav ul li a {
+  display: block;
+  margin-bottom: 10px;
+}
+
+body, h1, h2, h3, p {
+  font-size: 0.9rem; /* Smaller font size for mobile */
+}
+
+h1 {
+  font-size: 1.3em;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
+/* Adjust layout for smaller screens */
+section {
+  display: block;
+}
+
+/* Other responsive adjustments as needed */
+
+/* Hide sections by default and show them only when needed */
+section {
+  display: none;
+}
+
+/* Your existing styles for header, nav, footer, etc. */
+/* header, nav, footer {
+  / your existing styles /
+}
+/ ... other styles ... */
