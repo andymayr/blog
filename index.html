@@ -291,6 +291,26 @@
     window.addEventListener('scroll', checkTimelineItems);
     checkTimelineItems(); // Initial check
 });
+<script>
+    // Slideshow JavaScript
+    let slideIndex = 0;
+    showSlides();
+    function showSlides() {
+        // ... existing slideshow code ...
+    }
+
+    // Skill Card Flip JavaScript
+    document.querySelectorAll('.skill-card').forEach(card => {
+        card.addEventListener('click', () => {
+            card.querySelector('.card-inner').classList.toggle('is-flipped');
+        });
+    });
+
+    // Timeline Visibility JavaScript
+    document.addEventListener('DOMContentLoaded', function() {
+        // ... existing timeline visibility code ...
+    });
+</script>
 
 </body>
 </html>
