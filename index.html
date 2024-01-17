@@ -254,5 +254,12 @@
     <img src="https://pngtree.com/freepng/black-flat-running-stickman_5453536.html" alt="Stickman" />
     <span>Back to the top</span>
 </a>
+     <script>
+        document.querySelectorAll('.skill-card').forEach(card => {
+            card.addEventListener('click', () => {
+                card.querySelector('.card-inner').classList.toggle('is-flipped');
+            });
+        });
+    </script>
 </body>
 </html>
