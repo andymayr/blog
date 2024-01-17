@@ -124,50 +124,78 @@ background: url('path-to-your-background-image.jpg') no-repeat center center;
 background-size: cover; / Cover the entire section /
 padding: 40px 20px; / Additional padding for aesthetic spacing */
 }
+/* General Styles */
 .cv-section {
-    /* Existing styles */
+    padding: 20px;
 }
 
 .education-timeline {
     position: relative;
-    padding-left: 40px;
-    list-style: none;
+    padding-left: 30px; /* Adjust as needed for mobile */
 }
 
 .timeline-item {
     position: relative;
-    margin-bottom: 20px;
-    cursor: pointer;
+    margin-bottom: 30px; /* Spacing between items */
 }
 
 .timeline-icon {
-    /* Existing styles */
+    position: absolute;
+    left: 0; /* Align icons to the left */
+    top: 0;
+    background-color: #4a6664;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-align: center;
 }
 
 .timeline-content {
-    /* Existing styles */
-    overflow: hidden;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 8px
+;
+margin-left: 20px; /* Give some space for the icon */
+box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
 .sliding-panel {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width
-: 100%;
-background-color: #f0f0f0;
-color: #333;
-padding: 10px;
-border-radius: 0 0 8px 8px;
-transform: translateY(-100%);
-transition: transform 0.3s ease-in-out;
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.3s ease-in-out;
+background-color: #e0e0e0;
+padding: 0 10px; /* Adjust padding as needed /
+margin-top: 10px; / Space between main content and sliding panel */
 }
 
-.timeline-item:hover .sliding-panel {
-transform: translateY(0); /* Slide down on hover */
+.timeline-content:hover .sliding-panel {
+max-height: 100px; /* Adjust as needed for content size */
 }
 
-/* Additional styles for future plans */
+/* Styles for future plans differently */
 .timeline-item.future .timeline-icon {
 background-color: #a3c1ad;
+}
+/* For Webkit browsers like Chrome, Safari */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+    border-radius: 6px; /* Rounded corners for the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color when hovering over the thumb */
+}
+
+/* For other browsers (limited support) */
+body {
+    scrollbar-width: thin; /* 'auto' or 'thin' */
+    scrollbar-color: #888 #f1f1f1; /* Thumb and track color */
 }
