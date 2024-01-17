@@ -55,3 +55,14 @@ header {
 @media (max-width: 768px) {
   /* ... Your existing media queries ... */
 }
+/* Add this rule to the top of your existing styles.css file */
+section {
+  display: none;
+}
+
+/* Your existing CSS styles follow... */
+/* Example: */
+header, nav, footer {
+  /* your existing styles */
+}
+/* ... other styles ... */
