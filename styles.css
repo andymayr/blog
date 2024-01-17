@@ -88,3 +88,39 @@ footer a:hover {
     text-decoration: underline;
 }
 
+.objective-container {
+    max-width: 800px; /* Limiting the width for better readability */
+    margin: 0 auto; /* Centering the container */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    transform: translateY(-20px); /* Slight lift effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.objective-container:hover {
+    transform: translateY(-30px); /* Slight raise on hover for interaction */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#objective h
+2 {
+color: #4a6664; /* Complementing the color scheme */
+text-align: center;
+margin-bottom: 15px;
+font-size: 1.8em;
+}
+
+#objective p {
+font-size: 1.1em;
+line-height: 1.6;
+color: #333333; /* Darker text for emphasis */
+}
+
+/* Enhancing the background of the Objective section /
+#objective {
+background: url('path-to-your-background-image.jpg') no-repeat center center;
+background-size: cover; / Cover the entire section /
+padding: 40px 20px; / Additional padding for aesthetic spacing */
+}
