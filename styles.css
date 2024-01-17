@@ -46,23 +46,34 @@ header {
   text-align: center;
   margin-bottom: 20px;
   color: #4a90e2; /* Soft blue for header text */
-  /* ... Other header styles ... */
 }
 
-/* ... Rest of your existing CSS ... */
+/* Responsive Font Sizes */
+body, h1, h2, h3, p {
+  font-size: 1rem; /* Base font size */
+}
 
-/* Media queries */
+h1 { font-size: 1.5em; }
+h2 { font-size: 1.4em; }
+h3 { font-size: 1.3em; }
+
+/* Media Queries */
 @media (max-width: 768px) {
-  /* ... Your existing media queries ... */
-}
-/* Add this rule to the top of your existing styles.css file */
-section {
-  display: none;
-}
+  nav ul li {
+    display: block;
+    margin-right: 0;
+    text-align: left;
+  }
 
-/* Your existing CSS styles follow... */
-/* Example: */
-header, nav, footer {
-  /* your existing styles */
-}
-/* ... other styles ... */
+  nav ul li a {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  body, h1, h2, h3, p {
+    font-size: 0.9rem; /* Smaller font size for mobile */
+  }
+
+  h1 { font-size: 1.3em; }
+  h2 { font-size: 1.2em; } 
+h3 { font-size: 1.1em; }/* Adjust layout for smaller screens */ section { display: block; }/* Other responsive adjustments as needed */ }/* Hide sections by default and show them only when needed */ section { display: none; }/* Your existing styles for header, nav, footer, etc. / header, nav, footer { / your existing styles / } / ... other styles ... */
