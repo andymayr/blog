@@ -7,38 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        .cv-button {
-            padding: 10px;
-            background-color: #a3c1ad;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            margin-bottom: 10px;
-            cursor: pointer;
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        .cv-button:hover {
-            background-color: #87a394;
-        }
-
-        .cv-button i {
-            margin-right: 5px;
-        }
-
-        .cv-section {
-            display: none;
-            padding: 20px;
-            background-color: #f5f5f5;
-            border-radius: 5px;
-            margin-bottom: 20px;
-            transition: opacity 0.3s;
-        }
-
-        .cv-section.show {
-            display: block;
-            opacity: 1;
-        }
+        /* CSS styles will go here */
     </style>
 </head>
 
@@ -48,63 +17,51 @@
     </header>
     <nav>
         <ul>
-            <li><button class="cv-button" onclick="showSection('objective')"><i class="fas fa-bullseye"></i>Objective</button></li>
-            <li><button class="cv-button" onclick="showSection('experience')"><i class="fas fa-briefcase"></i>Experience</button></li>
-            <li><button class="cv-button" onclick="showSection('education')"><i class="fas fa-graduation-cap"></i>Education</button></li>
-            <li><button class="cv-button" onclick="showSection('skills')"><i class="fas fa-cogs"></i>Skills</button></li>
-            <li><button class="cv-button" onclick="showSection('activities')"><i class="fas fa-star"></i>Activities</button></li>
-            <li><button class="cv-button" onclick="showSection('languages')"><i class="fas fa-language"></i>Languages</button></li>
+            <li><a href="#objective" class="cv-button"><i class="fas fa-bullseye"></i>Objective</a></li>
+            <li><a href="#experience" class="cv-button"><i class="fas fa-briefcase"></i>Experience</a></li>
+            <li><a href="#education" class="cv-button"><i class="fas fa-graduation-cap"></i>Education</a></li>
+            <li><a href="#skills" class="cv-button"><i class="fas fa-cogs"></i>Skills</a></li>
+            <li><a href="#activities" class="cv-button"><i class="fas fa-star"></i>Activities</a></li>
+            <li><a href="#languages" class="cv-button"><i class="fas fa-language"></i>Languages</a></li>
         </ul>
-    </nav>
+   </nav>
+<section id="objective" class="cv-section">
+    <h2>Objective</h2>
+    <p>Goal-oriented young business graduate experienced in data analysis and change management. Proven track record of streamlining operations to reduce operational costs and enhance customer satisfaction. Seeking to contribute to financial success in dynamic environments through technical expertise and a drive to build a better and more sustainable future.</p>
+</section>
 
-    <section id="objective" class="cv-section">
-        <h2>Objective</h2>
-        <p>Goal-oriented young business graduate experienced in data analysis and change management. Proven track record of streamlining operations to reduce operational costs and enhance customer satisfaction. Seeking to contribute to financial success in dynamic environments through technical expertise and a drive to build a better and more sustainable future.</p>
-    </section>
+<section id="experience" class="cv-section">
+    <h2>Experience</h2>
+    <!-- Your experience content goes here -->
+</section>
 
-    <section id="experience" class="cv-section">
-        <h2>Experience</h2>
-        <!-- Your experience content goes here -->
-    </section>
+<section id="education" class="cv-section">
+    <h2>Education</h2>
+    <!-- Your education content goes here -->
+</section>
 
-    <section id="education" class="cv-section">
-        <h2>Education</h2>
-        <!-- Your education content goes here -->
-    </section>
+<section id="skills" class="cv-section">
+    <h2>Skills</h2>
+    <!-- Your skills content goes here -->
+</section>
 
-    <section id="skills" class="cv-section">
-        <h2>Skills</h2>
-        <!-- Your skills content goes here -->
-    </section>
+<section id="activities" class="cv-section">
+    <h2>Activities</h2>
+    <!-- Your activities content goes here -->
+</section>
 
-    <section id="activities" class="cv-section">
-        <h2>Activities</h2>
-        <!-- Your activities content goes here -->
-    </section>
+<section id="languages" class="cv-section">
+    <h2>Languages</h2>
+    <!-- Your languages content goes here -->
+</section>
 
-    <section id="languages" class="cv-section">
-        <h2>Languages</h2>
-        <!-- Your languages content goes here -->
-    </section>
+<footer>
+    <p>Contact Information: <a href="mailto:mayerandreas3@gmail.com">mayerandreas3@gmail.com</a></p>
+    <p>Phone: +52 2222393453</p>
+    <p>Location: Bavaria, Germany (currently in Puebla, Mexico)</p>
+    <p>Social Links: <a href="https://www.linkedin.com/in/andreas-mayer-arriaga/">LinkedIn</a> | <a href="https://www.instagram.com/andy.mayr/">
+Other Social Network</a></p>
+</footer>
 
-    <footer style="background-color: #333; color: white; text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%;">
-        <p>Contact Information: <a href="mailto:mayerandreas3@gmail.com" style="color: #a3c1ad;">mayerandreas3@gmail.com</a></p>
-        <p>Phone: +52 2222393453</p>
-        <p>Location: Bavaria, Germany (currently in Puebla, Mexico)</p>
-        <p>Social Links: <a href="https://www.linkedin.com/in/andreas-mayer-arriaga/" style="color: #a3c1ad;">LinkedIn</a> | <a href="https://www.instagram.com/andy.mayr/" style="color: #a3c1ad;">Other Social Network</a></p>
-    </footer>
-
-    <script>
-        function showSection(sectionId) {
-            // Hide all sections
-            document.querySelectorAll('.cv-section').forEach(section => {
-                section.classList.remove('show');
-            });
-
-            // Show the selected section
-            document.getElementById(sectionId).classList.add('show');
-        }
-    </script>
 </body>
-
 </html>
