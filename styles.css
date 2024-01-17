@@ -195,23 +195,24 @@ footer a:hover {
     margin-right: 5px;
 }
 
-/* Language List Styles */
-.language-list {
-    list-style: none;
-    padding: 0;
+.language-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between language items */
 }
 
-.language-list li {
-    margin-bottom: 10px;
-    font-size: 1.1em;
+.language {
+    display: flex;
+    align-items: center;
 }
 
 .language-flag {
     width: 30px; /* Adjust size as needed */
     height: auto;
     margin-right: 10px;
-    vertical-align: middle;
 }
+
 
 /* Back To Top Button */
 #backToTop {
