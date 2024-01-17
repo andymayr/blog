@@ -219,5 +219,29 @@ width: 100%;
 
 .active, .dot:hover {
     background-color: #717171;
+    
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* New typography */
+}
+
+footer a {
+    color: #a3c1ad;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+/* Font Awesome Icons */
+.fab {
+    margin-right: 5px;
 }
 
