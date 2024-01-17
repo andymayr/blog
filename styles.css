@@ -71,7 +71,7 @@ footer {
   margin: 5px 0; /* Adjust spacing */
   }
   
-  /* Section Styles /
+   Section Styles /
   section {
   display: none; / Hidden by default, shown by JavaScript /
   padding: 20px;
@@ -80,7 +80,7 @@ footer {
   border-radius: 5px; / Rounded corners for aesthetics /
   margin-bottom: 30px; / Space between sections */
   
-  /* Media Queries for Responsive Design /
+   Media Queries for Responsive Design /
   @media (max-width: 768px) {
   nav ul {
   flex-direction: column; / Stack items vertically on small screens /
