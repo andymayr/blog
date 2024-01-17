@@ -260,4 +260,28 @@ footer a:hover {
     margin-right: 10px;
     vertical-align: middle;
 }
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    padding: 10px;
+    background-color: #ddd;
+    color: #000;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#backToTop img {
+    width: 30px; /* Adjust as needed */
+    height: auto;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+#backToTop span {
+    vertical-align: middle;
+}
 
