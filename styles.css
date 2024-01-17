@@ -284,4 +284,69 @@ footer a:hover {
 #backToTop span {
     vertical-align: middle;
 }
+/* Experience Timeline Styles */
+.experience-timeline {
+    position: relative;
+    padding-left: 40px; /* Adjust based on your layout */
+    list-style: none;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 20px; /* Space between items */
+}
+
+.timeline-icon {
+    position: absolute;
+    left: 0; /* Align icons to the left */
+    top: 0;
+    background-color: #5c7c7b; /* Change as needed */
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.timeline-content {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    margin-left: 20px; /* Adjust based on icon size */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.1em;
+}
+
+.timeline-content span {
+    font-style: italic;
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* Optional: Style for company logos */
+.company-logo {
+    width: 50px; /* Adjust as needed */
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+    .experience-timeline {
+        padding-left: 20px;
+    }
+
+    .timeline-icon {
+        font-size: 1em;
+    }
+
+    .timeline-content {
+        margin-left: 15px;
+    }
+}
 
