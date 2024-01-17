@@ -1,3 +1,4 @@
+
 /* Reset default browser styles */
 body, h1, h2, h3, p, ul, nav ul li a {
   margin: 0;
@@ -77,3 +78,40 @@ h3 { font-size: 1.3em; }
   h1 { font-size: 1.3em; }
   h2 { font-size: 1.2em; } 
 h3 { font-size: 1.1em; }/* Adjust layout for smaller screens */ section { display: block; }/* Other responsive adjustments as needed */ }/* Hide sections by default and show them only when needed */ section { display: none; }/* Your existing styles for header, nav, footer, etc. / header, nav, footer { / your existing styles / } / ... other styles ... */
+/* Add this code to your existing CSS file */
+
+/* Responsive Font Sizes */
+body, h1, h2, h3, p {
+  font-size: 1rem; /* Base font size */
+}
+
+h1 { font-size: 1.5em; }
+h2 { font-size: 1.4em; }
+h3 { font-size: 1.3em; }
+
+/* Media Queries */
+@media (max-width: 768px) {
+  /* Adjust font sizes for smaller screens */
+  body, h1, h2, h3, p {
+    font-size: 0.9rem; /* Smaller font size for mobile */
+  }
+
+  h1 { font-size: 1.3em; }
+  h2 { font-size: 1.2em; }
+  h3 { font-size: 1.1em; }
+
+  /* Adjust layout for smaller screens as needed */
+  nav ul li {
+    display: block;
+    margin-right: 0;
+    text-align: left;
+  }
+
+  nav ul li a {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+/* Ensure the rest of your styles are mobile-responsive */
+/* Add more media queries as needed for different screen sizes */
