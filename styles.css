@@ -284,6 +284,22 @@ footer a:hover {
     transform: rotateY(180deg);
     background-color: red;
     background-image: url('https://www.shutterstock.com/image-vector/playing-cards-back-260nw-335546243.jpg'); /* Path to your red and white silhouette image */
+
+
+    .experience-timeline {
+    overflow: hidden;
+    position: relative;
+    padding-left: 40px; /* Adjust as needed */
+}
+
+.timeline-item {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Styles for timeline-icon, timeline-content remain the same */
+
     color: white;
     border-radius: 10px;
 }
