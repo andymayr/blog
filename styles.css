@@ -283,7 +283,7 @@ footer a:hover {
 .poker-card .card-back {
     transform: rotateY(180deg);
     background-color: red;
-    background-image: url('https://cdn.pixabay.com/photo/2022/02/23/20/25/card-7031432_1280.png'); /* Path to your red and white silhouette image */
+    background-image: url('https://www.shutterstock.com/image-vector/playing-cards-back-260nw-335546243.jpg'); /* Path to your red and white silhouette image */
     color: white;
     border-radius: 10px;
 }
