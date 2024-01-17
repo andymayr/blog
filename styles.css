@@ -6,38 +6,38 @@ body, h1, h2, h3, p, ul {
 
 /* Page layout */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Arial, sans-serif;
   line-height: 1.6;
   background-color: #000000; /* Black background */
-  color: #ffffff; /* White text for contrast */
+  color: #d9d9d9; /* Soft grey text for a professional look */
   padding: 20px;
 }
 
 header {
   text-align: center;
   margin-bottom: 20px;
-  color: #1a8cff; /* Bright blue for header text */
+  color: #4a90e2; /* Soft blue for header text */
 }
 
 h1 {
   font-size: 28px;
   font-weight: bold;
-  color: #ff3333; /* Bright red for main headers */
-  text-shadow: 2px 2px 4px #000000; /* Text shadow for depth */
+  color: #a3c1ad; /* Soft green for main headers */
+  text-shadow: 1px 1px 2px #1a1a1a; /* Subtle text shadow */
 }
 
 section {
   margin-bottom: 20px;
-  background-color: #262626; /* Dark gray for sections */
+  background: linear-gradient(to right, #333333, #4b4b4b); /* Linear gradient for sections */
   padding: 10px;
   border-radius: 5px;
-  box-shadow: 3px 3px 6px #1a1a1a; /* Box shadow for depth */
+  box-shadow: inset 0 0 10px #000000; /* Inverse shadow for depth */
 }
 
 h2 {
   font-size: 24px;
   font-weight: bold;
-  color: #4dff4d; /* Neon green for sub-headers */
+  color: #d1a684; /* Soft copper for sub-headers */
   margin-bottom: 10px;
 }
 
@@ -48,7 +48,7 @@ article {
 h3 {
   font-size: 20px;
   font-weight: bold;
-  color: #66b3ff; /* Soft blue for tertiary headers */
+  color: #86a6df; /* Soft blue for tertiary headers */
   margin-bottom: 5px;
 }
 
@@ -61,7 +61,7 @@ footer {
   margin-top: 20px;
   text-align: center;
   font-size: 14px;
-  color: #b3b3b3; /* Light grey for footer */
+  color: #8c8c8c; /* Light grey for footer */
 }
 
 /* Skills and Languages section */
