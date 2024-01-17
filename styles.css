@@ -244,4 +244,20 @@ footer a:hover {
 .fab {
     margin-right: 5px;
 }
+.language-list {
+    list-style: none;
+    padding: 0;
+}
+
+.language-list li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.language-flag {
+    width: 30px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+}
 
