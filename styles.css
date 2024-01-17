@@ -255,10 +255,6 @@ footer a:hover {
     }
 }
 
-    .timeline-content {
-        margin-left: 15px;
-    }
-}
 /* Container for Skill Cards */
 .skill-cards-container {
     display: flex;
@@ -288,6 +284,8 @@ footer a:hover {
     }
 }
 
+/* Styles for Card Inner, Front, Back */
+/* ... (as previously provided) ... */
 /* Styles for Card Inner, Front, Back */
 /* ... (as previously provided) ... */
 
