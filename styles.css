@@ -260,4 +260,9 @@ footer a:hover {
 }
 
 /* Add any additional styling as needed */
+.dynamic-text {
+    opacity: 1; /* Ensure the text is fully visible */
+    color: #000; /* Change the color as needed */
+    /* Additional styling */
+}
 
