@@ -269,5 +269,28 @@
         });
     });
 </script>
+    <script>
+    document.querySelectorAll('.accordion-button').forEach(button => {
+        button.addEventListener('click', () => {
+            // Esto es para cerrar cualquier otro contenido de acordeón abierto
+            const allContents = document.querySelectorAll('.accordion-content');
+            allContents.forEach(content => {
+                if (content !== button.nextElementSibling) {
+                    content.style.display = 'none';
+                }
+            });
+
+            // Esto es para mostrar/ocultar el contenido actual del acordeón
+            const accordionContent = button.nextElementSibling;
+            if (accordionContent.style.display === 'block') {
+                accordionContent.style.display = 'none';
+            } else {
+                accordionContent.style.display = 'block';
+            }
+        });
+    });
+</script>
+
+
 </body>
 </html>
