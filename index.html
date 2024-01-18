@@ -260,6 +260,15 @@
 };
 
     </script>
+<script>
+    document.querySelectorAll('.accordion-button').forEach(button => {
+        button.addEventListener('click', function() {
+            // Toggle the visibility of the next sibling element (accordion content)
+            this.nextElementSibling.style.display = 
+                this.nextElementSibling.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+</script>
 
 
 </body>
