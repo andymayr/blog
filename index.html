@@ -263,19 +263,6 @@
     <script>
     document.querySelectorAll('.accordion-button').forEach(button => {
         button.addEventListener('click', () => {
-            const accordionContent = button.nextElementSibling;
-            button.classList.toggle('active');
-            if (accordionContent.style.display === "block") {
-                accordionContent.style.display = "none";
-            } else {
-                accordionContent.style.display = "block";
-            }
-        });
-    });
-</script>
-    <script>
-    document.querySelectorAll('.accordion-button').forEach(button => {
-        button.addEventListener('click', () => {
             // Esto es para cerrar cualquier otro contenido de acordeón abierto
             const allContents = document.querySelectorAll('.accordion-content');
             allContents.forEach(content => {
@@ -294,19 +281,25 @@
         });
     });
 </script>
-<script>
-    document.querySelectorAll('.language').forEach(lang => {
-        lang.addEventListener('mouseenter', () => {
-            // Cambia el texto al pasar el mouse
-            const dynamicText = lang.querySelector('.dynamic-text');
-            dynamicText.textContent = "Welcome!"; // Texto de bienvenida en varios idiomas
-        });
-        lang.addEventListener('mouseleave', () => {
-            // Restaura el texto original al salir el mouse
-            const dynamicText = lang.querySelector('.dynamic-text');
-            if(dynamicText.id === "spanish-text") dynamicText.textContent = "Hola 👋";
-            if(dynamicText.id === "german-text") dynamicText.textContent = "Hallo 👋";
-            if(dynamicText.id === "english-text") dynamicText.textContent = "Hello 👋";
+
+    <script>
+    document.querySelectorAll('.accordion-button').forEach(button => {
+        button.addEventListener('click', () => {
+            // Esto es para cerrar cualquier otro contenido de acordeón abierto
+            const allContents = document.querySelectorAll('.accordion-content');
+            allContents.forEach(content => {
+                if (content !== button.nextElementSibling) {
+                    content.style.display = 'none';
+                }
+            });
+
+            // Esto es para mostrar/ocultar el contenido actual del acordeón
+            const accordionContent = button.nextElementSibling;
+            if (accordionContent.style.display === 'block') {
+                accordionContent.style.display = 'none';
+            } else {
+                accordionContent.style.display = 'block';
+            }
         });
     });
 </script>
