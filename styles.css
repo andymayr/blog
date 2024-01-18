@@ -80,22 +80,25 @@ nav ul li {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 /* Estilos para la sección de Experiencia */
 .experience-timeline .timeline-icon {
-    background-color: #4a6664; /* Un color distinto para los íconos */
+    background-color: #556272; /* Un color más oscuro */
 }
 
 .experience-timeline .timeline-content {
-    background-color: #f0f0f0;
-    border-left: 3px solid #4a6664; /* Borde izquierdo como detalle */
+    background-color: #eaecef;
+    border-left: 4px solid #556272; /* Un estilo de borde más grueso y oscuro */
+}
+
 }
 
 /* Estilos para la sección de Educación */
 .education-timeline .timeline-icon {
-    background-color: #a3c1ad; /* Otro color para esta sección */
+    background-color: #8eb4ab; /* Un color más claro */
 }
 
 .education-timeline .timeline-content {
     background-color: #ffffff;
-    border-left: 3px solid #a3c1ad; /* Borde izquierdo diferente */
+    border: 2px solid #8eb4ab;
+    border-radius: 15px; /* Bordes redondeados */
 }
 
 /* Estilos comunes del timeline */
