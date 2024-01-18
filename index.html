@@ -260,45 +260,6 @@
 };
 
     </script>
-    <script>
-    document.querySelectorAll('.accordion-button').forEach(button => {
-        button.addEventListener('click', () => {
-            // Esto es para cerrar cualquier otro contenido de acordeón abierto
-            const allContents = document.querySelectorAll('.accordion-content');
-            allContents.forEach(content => {
-                if (content !== button.nextElementSibling) {
-                    content.style.display = 'none';
-                }
-            });
-
-            // Esto es para mostrar/ocultar el contenido actual del acordeón
-            const accordionContent = button.nextElementSibling;
-            if (accordionContent.style.display === 'block') {
-                accordionContent.style.display = 'none';
-            } else {
-                accordionContent.style.display = 'block';
-            }
-        });
-    });
-</script>
-
-  <script>
-    document.querySelectorAll('.accordion-button').forEach(button => {
-        button.addEventListener('click', () => {
-            // Toggle the current accordion content
-            const accordionContent = button.nextElementSibling;
-            accordionContent.style.display = accordionContent.style.display === 'block' ? 'none' : 'block';
-
-            // Close other opened accordion contents
-            const allContents = document.querySelectorAll('.accordion-content');
-            allContents.forEach(content => {
-                if (content !== accordionContent) {
-                    content.style.display = 'none';
-                }
-            });
-        });
-    });
-</script>
 
 
 </body>
