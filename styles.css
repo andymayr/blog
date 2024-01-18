@@ -270,3 +270,29 @@ footer a:hover {
     display: block;
     margin-top: 10px;
 }
+.language-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre los elementos de idioma */
+}
+
+.language {
+    text-align: center;
+}
+
+.language-flag {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.language-name {
+    display: block;
+    font-weight: bold;
+}
+
+.dynamic-text {
+    color: #666;
+    font-style: italic;
+}
+
