@@ -222,37 +222,8 @@ footer a:hover {
     .timeline-content {
         margin-left: 15px;
     }
-}
-/* Container for Skill Cards */
-.skill-cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; /* Space between cards */
-}
-/* Individual Skill Card Styling */
-.skill-card {
-    flex: 1 0 calc(33.33% - 20px); /* 3 cards per row */
-    perspective: 1000px;
-    margin-bottom: 20px;
-    cursor: pointer;
-}
-/* Responsive Adjustments */
-@media screen and (max-width: 768px) {
-    .skill-card {
-        flex: 1 0 calc(50% - 20px); /* 2 cards per row on smaller screens */
-    }
-}
-@media screen and (max-width: 480px) {
-    .skill-card {
-        flex: 1 0 100%; /* 1 card per row on very small screens */
-    }
-}
 
-/* Styles for Card Inner, Front, Back */
-/* ... (as previously provided) ... */
-/* Styles for Card Inner, Front, Back */
-/* ... (as previously provided) ... */
+
 
 .dynamic-text {
     transition: opacity 0.5s ease-in-out;
@@ -264,6 +235,20 @@ footer a:hover {
     opacity: 1; /* Ensure the text is fully visible */
     color: #333; /* Change the color as needed */
     /* Additional styling */
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.skill-item {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .skills-grid {
     display: grid;
@@ -292,4 +277,5 @@ footer a:hover {
 .skill-item:hover .skill-description {
     display: block;
 }
+
 
