@@ -78,42 +78,20 @@ nav ul li {
 .objective-container:hover {
     transform: translateY(-30px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-/* Estilos para la sección de Experiencia */
-.experience-timeline .timeline-icon {
-    background-color: #4a6664; /* Un color distinto para los íconos */
 }
 /* Education Timeline */
 .education-timeline, .experience-timeline {
     position: relative;
     padding-left: 40px; /* Adjust based on your layout */
     list-style: none;
-
-.experience-timeline .timeline-content {
-    background-color: #f0f0f0;
-    border-left: 3px solid #4a6664; /* Borde izquierdo como detalle */
 }
-
-/* Estilos para la sección de Educación */
-.education-timeline .timeline-icon {
-    background-color: #a3c1ad; /* Otro color para esta sección */
-}
-
-.education-timeline .timeline-content {
-    background-color: #ffffff;
-    border-left: 3px solid #a3c1ad; /* Borde izquierdo diferente */
-}
-
-/* Estilos comunes del timeline */
 .timeline-item {
     position: relative;
     margin-bottom: 20px; /* Space between items */
-    margin-bottom: 30px;
 }
-
 .timeline-icon {
     position: absolute;
     left: 0; /* Align icons to the left */
-    left: 0;
     top: 0;
     background-color: #5c7c7b; /* Change as needed */
     color: white;
@@ -122,13 +100,11 @@ nav ul li {
     text-align: center;
     font-size: 1.2em;
 }
-
 .timeline-content {
     background-color: #f0f0f0;
     padding: 15px;
     border-radius: 8px;
     margin-left: 20px; /* Adjust based on icon size */
-    margin-left: 20px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 .timeline-content h3 {
@@ -140,7 +116,6 @@ nav ul li {
     font-style: italic;
     color: #666;
     font-size: 0.9em;
-
 }
 /* Optional: Style for company logos */
 .company-logo {
@@ -273,8 +248,10 @@ footer a:hover {
 .accordion-button:hover {
     background-color: #4a6664;
 }
+
 .accordion-content {
     padding: 0 15px;
+    display: none;
     display: none; /* Ocultar inicialmente el contenido */
     overflow: hidden;
     background-color: #f0f0f0;
@@ -285,4 +262,33 @@ footer a:hover {
     height: auto;
     display: block;
     margin-top: 10px;
+}
+.language-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre los elementos de idioma */
+}
+
+.language {
+    text-align: center;
+}
+
+.language-flag {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.language-name {
+    display: block;
+    font-weight: bold;
+}
+
+.dynamic-text {
+    color: #666;
+    font-style: italic;
+}
+.accordion-content {
+    display: none;
+    /* Other styling as needed */
 }
