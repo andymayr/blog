@@ -191,7 +191,7 @@ footer a:hover {
     z-index: 9999;
     padding: 10px;
     background-color: #ddd;
-    color: #000;
+    color: #333;
     cursor: pointer;
     border-radius: 5px;
     text-align: center;
@@ -262,7 +262,7 @@ footer a:hover {
 /* Add any additional styling as needed */
 .dynamic-text {
     opacity: 1; /* Ensure the text is fully visible */
-    color: #000; /* Change the color as needed */
+    color: #333; /* Change the color as needed */
     /* Additional styling */
 }
 
