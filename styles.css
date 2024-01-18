@@ -80,50 +80,68 @@ nav ul li {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 /* Estilos para la sección de Experiencia */
 .experience-timeline .timeline-icon {
-    background-color: #556272; /* Un color más oscuro */
+    background-color: #4a6664; /* Un color distinto para los íconos */
 }
+/* Education Timeline */
+.education-timeline, .experience-timeline {
+    position: relative;
+    padding-left: 40px; /* Adjust based on your layout */
+    list-style: none;
 
 .experience-timeline .timeline-content {
-    background-color: #eaecef;
-    border-left: 4px solid #556272; /* Un estilo de borde más grueso y oscuro */
-}
-
+    background-color: #f0f0f0;
+    border-left: 3px solid #4a6664; /* Borde izquierdo como detalle */
 }
 
 /* Estilos para la sección de Educación */
 .education-timeline .timeline-icon {
-    background-color: #8eb4ab; /* Un color más claro */
+    background-color: #a3c1ad; /* Otro color para esta sección */
 }
 
 .education-timeline .timeline-content {
     background-color: #ffffff;
-    border: 2px solid #8eb4ab;
-    border-radius: 15px; /* Bordes redondeados */
+    border-left: 3px solid #a3c1ad; /* Borde izquierdo diferente */
 }
 
 /* Estilos comunes del timeline */
 .timeline-item {
     position: relative;
+    margin-bottom: 20px; /* Space between items */
     margin-bottom: 30px;
 }
 
 .timeline-icon {
     position: absolute;
+    left: 0; /* Align icons to the left */
     left: 0;
     top: 0;
+    background-color: #5c7c7b; /* Change as needed */
     color: white;
     border-radius: 50%;
     padding: 5px 10px;
     text-align: center;
+    font-size: 1.2em;
 }
 
 .timeline-content {
+    background-color: #f0f0f0;
     padding: 15px;
     border-radius: 8px;
+    margin-left: 20px; /* Adjust based on icon size */
     margin-left: 20px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
+.timeline-content h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.1em;
+}
+.timeline-content span {
+    font-style: italic;
+    color: #666;
+    font-size: 0.9em;
 
+}
 /* Optional: Style for company logos */
 .company-logo {
     width: 50px; /* Adjust as needed */
@@ -225,18 +243,13 @@ footer a:hover {
         margin-left: 15px;
     }
 }
-
     .timeline-content {
         margin-left: 15px;
     }
-
-
-
 .dynamic-text {
     transition: opacity 0.5s ease-in-out;
     opacity: 0;
 }
-
 /* Add any additional styling as needed */
 .dynamic-text {
     opacity: 1; /* Ensure the text is fully visible */
@@ -246,7 +259,6 @@ footer a:hover {
 .skills-accordion .accordion-item {
     margin-bottom: 10px;
 }
-
 .accordion-button {
     background-color: #5c7c7b;
     color: white;
@@ -258,11 +270,9 @@ footer a:hover {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
 .accordion-button:hover {
     background-color: #4a6664;
 }
-
 .accordion-content {
     padding: 0 15px;
     display: none; /* Ocultar inicialmente el contenido */
@@ -270,31 +280,9 @@ footer a:hover {
     background-color: #f0f0f0;
     border-radius: 5px;
 }
-
 .skill-image {
     max-width: 100%;
     height: auto;
     display: block;
     margin-top: 10px;
 }
-.timeline-item {
-    position: relative;
-    margin-bottom: 30px;
-}
-
-.timeline-icon {
-    position: absolute;
-    left: 0;
-    top: 0;
-    color: white;
-    border-radius: 50%;
-    padding: 5px 10px;
-    text-align: center;
-}
-
-.timeline-content {
-    padding: 15px;
-    margin-left: 20px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-}
-
