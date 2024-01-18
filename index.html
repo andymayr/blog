@@ -174,26 +174,30 @@
         <!-- Visual representations of hobbies, volunteer work, etc., could be included -->
     </div>
 </section>
- <section id="languages" class="cv-section">
-        <h2>Languages</h2>
-        <div class="language-container">
-            <div class="language">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg" alt="Mexican Flag" class="language-flag">
-                <span class="language-name">Spanish - C2</span>
-                <div class="dynamic-text" id="spanish-text">Hola</div>
-            </div>
-            <div class="language">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg" alt="German Flag" class="language-flag">
-                <span class="language-name">German - C2</span>
-                <div class="dynamic-text" id="german-text">Hallo</div>
-            </div>
-            <div class="language">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/English_language.svg" alt="British/American Flag" class="language-flag">
-                <span class="language-name">English - C1</span>
-                <div class="dynamic-text" id="english-text">Hello</div>
-            </div>
+<section id="languages" class="cv-section">
+    <h2>Languages</h2>
+    <div class="language-container">
+        <!-- Spanish -->
+        <div class="language">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg" alt="Mexican Flag" class="language-flag">
+            <span class="language-name">Spanish - C2</span>
+            <div class="dynamic-text" id="spanish-text">Hola 👋</div>
         </div>
-    </section>
+        <!-- German -->
+        <div class="language">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg" alt="German Flag" class="language-flag">
+            <span class="language-name">German - C2</span>
+            <div class="dynamic-text" id="german-text">Hallo 👋</div>
+        </div>
+        <!-- English -->
+        <div class="language">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/English_language.svg" alt="British/American Flag" class="language-flag">
+            <span class="language-name">English - C1</span>
+            <div class="dynamic-text" id="english-text">Hello 👋</div>
+        </div>
+    </div>
+</section>
+
 
 <footer>
     <p>Contact Information: <a href="mailto:mayerandreas3@gmail.com">mayerandreas3@gmail.com</a></p>
@@ -287,6 +291,22 @@
             } else {
                 accordionContent.style.display = 'block';
             }
+        });
+    });
+</script>
+<script>
+    document.querySelectorAll('.language').forEach(lang => {
+        lang.addEventListener('mouseenter', () => {
+            // Cambia el texto al pasar el mouse
+            const dynamicText = lang.querySelector('.dynamic-text');
+            dynamicText.textContent = "Welcome!"; // Texto de bienvenida en varios idiomas
+        });
+        lang.addEventListener('mouseleave', () => {
+            // Restaura el texto original al salir el mouse
+            const dynamicText = lang.querySelector('.dynamic-text');
+            if(dynamicText.id === "spanish-text") dynamicText.textContent = "Hola 👋";
+            if(dynamicText.id === "german-text") dynamicText.textContent = "Hallo 👋";
+            if(dynamicText.id === "english-text") dynamicText.textContent = "Hello 👋";
         });
     });
 </script>
