@@ -13,6 +13,10 @@
     <header>
         <h1>Andreas Mayer Arriaga</h1>
     </header>
+    <div class="greeting-contact-section">
+    <div id="personalizedGreeting"></div>
+    <a href="mailto:mayerandreas3@gmail.com" class="contact-me-button">Contact Me</a>
+</div>
     <nav>
         <ul>
             <li><a href="#objective" class="cv-button"><i class="fas fa-bullseye"></i>Objective</a></li>
@@ -279,6 +283,23 @@
 };
 
     </script>
+    window.onload = function() {
+    // Existing window.onload code here...
+    
+    // Add this new code for greeting
+    var greetingText = document.getElementById('personalizedGreeting');
+    var date = new Date();
+    var hour = date.getHours();
+
+    if(hour < 12) {
+        greetingText.innerHTML = 'Good Morning! Welcome to my CV.';
+    } else if(hour < 18) {
+        greetingText.innerHTML = 'Good Afternoon! Welcome to my CV.';
+    } else {
+        greetingText.innerHTML = 'Good Evening! Welcome to my CV.';
+    }
+};
+
 <script>
     document.querySelectorAll('.accordion-button').forEach(button => {
         button.addEventListener('click', function() {
