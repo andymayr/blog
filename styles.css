@@ -261,3 +261,56 @@ footer a:hover {
 }
 
 /* Additional styling as needed */
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em; /* Tamaño más pequeño para el título */
+        letter-spacing: 1px; /* Espaciado de letras ajustado */
+    }
+
+    nav ul li {
+        display: block; /* Los elementos de navegación se muestran en bloque en lugar de en línea */
+        margin: 5px 0; /* Ajuste de margen para elementos de lista */
+    }
+
+    .cv-button {
+        padding: 8px 12px; /* Ajuste de padding para hacer botones más accesibles */
+    }
+
+    .objective-container, .slideshow-container {
+        max-width: 90%; /* Ajuste de ancho máximo para contenedores */
+        margin: 20px auto; /* Centrado y margen ajustado */
+    }
+
+    .cv-section {
+        margin: 10px; /* Margen reducido para secciones */
+    }
+
+    .education-timeline, .experience-timeline {
+        padding-left: 15px; /* Padding izquierdo ajustado para líneas de tiempo */
+    }
+
+    .timeline-icon {
+        font-size: 0.8em; /* Tamaño de fuente ajustado para iconos de la línea de tiempo */
+    }
+
+    .timeline-content {
+        margin-left: 10px; /* Margen izquierdo ajustado para contenido de la línea de tiempo */
+    }
+
+    .language-container, .language {
+        flex-direction: column; /* Dirección de flex ajustada para contenedores de idiomas */
+        align-items: flex-start; /* Alineación ajustada para elementos dentro del contenedor de idiomas */
+    }
+
+    .language-flag {
+        margin-bottom: 5px; /* Margen ajustado para banderas de idiomas */
+    }
+
+    /* Ajuste para el botón de volver al inicio */
+    #backToTop {
+        bottom: 10px; /* Posición inferior ajustada */
+        right: 10px; /* Posición derecha ajustada */
+    }
+}
+
