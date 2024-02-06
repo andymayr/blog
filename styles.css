@@ -178,9 +178,12 @@ nav ul li {
 }
 
 footer {
+    display: flex; /* Habilita Flexbox */
+    flex-direction: column; /* Alinea los elementos en una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente (si es necesario) */
     background-color: #333; /* Color de fondo */
     color: #fff; /* Color del texto */
-    text-align: center; /* Alineación del texto */
     padding: 20px; /* Espaciado interno */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Familia tipográfica */
 }
@@ -197,8 +200,8 @@ footer a:hover {
 }
 
 footer p {
-    margin: 10px 0; /* Espaciado vertical para los párrafos */
-}
+    margin: 10px 0; /* Espaciado vertical para los párr
+
 
 .social-link {
     display: inline-block; /* Permite mejor control del espaciado y estilo */
@@ -309,14 +312,22 @@ footer p {
         margin-left: 10px; /* Margen izquierdo ajustado para contenido de la línea de tiempo */
     }
 
-    .language-container, .language {
-        flex-direction: column; /* Dirección de flex ajustada para contenedores de idiomas */
-        align-items: flex-start; /* Alineación ajustada para elementos dentro del contenedor de idiomas */
-    }
+ .language-container, .language {
+    flex-direction: column; /* Mantiene la dirección del flex en columna */
+    align-items: flex-start; /* Alinea los elementos al inicio */
+}
 
-    .language-flag {
-        margin-bottom: 5px; /* Margen ajustado para banderas de idiomas */
-    }
+.language-flag {
+    width: 20px; /* Ajusta el ancho de las banderas a un tamaño más pequeño */
+    height: auto; /* Mantiene la proporción de las banderas */
+    margin-bottom: 5px; /* Mantiene el margen inferior */
+}
+
+/* Reducir el tamaño de fuente de los elementos de idioma para hacerlos más pequeños */
+.language {
+    font-size: 12px; /* Ajusta esto según tus necesidades */
+}
+
 
     /* Ajuste para el botón de volver al inicio */
     #backToTop {
@@ -324,30 +335,5 @@ footer p {
         right: 10px; /* Posición derecha ajustada */
     }
 }
-.greeting-contact-section {
-    text-align: center;
-    margin: 20px 0;
-}
-
-#personalizedGreeting {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.contact-me-button {
-    display: inline-block;
-    background-color: #007bff; /* Change as per your color scheme */
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.contact-me-button:hover {
-    background-color: #0056b3;
-}
-
 
 
