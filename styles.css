@@ -177,25 +177,34 @@ nav ul li {
     height: auto;
 }
 
-/* Footer Styles */
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* New typography */
+    background-color: #333; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    text-align: center; /* Alineación del texto */
+    padding: 20px; /* Espaciado interno */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Familia tipográfica */
 }
 
 footer a {
-    color: #a3c1ad;
-    text-decoration: none;
-    margin: 0 10px;
+    color: #a3c1ad; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado en los enlaces */
+    margin: 0 10px; /* Espaciado alrededor de los enlaces */
 }
 
 footer a:hover {
-    text-decoration: underline;
-    color: #ffffff;
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+    color: #ffffff; /* Color del texto al pasar el mouse */
 }
+
+footer p {
+    margin: 10px 0; /* Espaciado vertical para los párrafos */
+}
+
+.social-link {
+    display: inline-block; /* Permite mejor control del espaciado y estilo */
+    margin: 0 5px; /* Espaciado alrededor de los enlaces sociales */
+}
+
 
 /* Font Awesome Icons */
 .fab {
