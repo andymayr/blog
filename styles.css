@@ -187,6 +187,7 @@ footer {
     align-items: center; /* Centra elementos horizontalmente */
     justify-content: center; /* Centra elementos verticalmente */
     text-align: center; /* Alineación del texto */
+    width: 100%; /* Asegura que el footer ocupe todo el ancho disponible */
 }
 
 footer a {
