@@ -178,14 +178,15 @@ nav ul li {
 }
 
 footer {
-    display: flex; /* Habilita Flexbox */
-    flex-direction: column; /* Alinea los elementos en una columna */
-    align-items: center; /* Centra los elementos horizontalmente */
-    justify-content: center; /* Centra los elementos verticalmente (si es necesario) */
     background-color: #333; /* Color de fondo */
     color: #fff; /* Color del texto */
     padding: 20px; /* Espaciado interno */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Familia tipográfica */
+    display: flex; /* Usa Flexbox */
+    flex-direction: column; /* Orientación vertical */
+    align-items: center; /* Centra elementos horizontalmente */
+    justify-content: center; /* Centra elementos verticalmente */
+    text-align: center; /* Alineación del texto */
 }
 
 footer a {
@@ -200,13 +201,14 @@ footer a:hover {
 }
 
 footer p {
-    margin: 10px 0; /* Espaciado vertical para los párr
-
+    margin: 10px 0; /* Espaciado vertical para los párrafos */
+}
 
 .social-link {
     display: inline-block; /* Permite mejor control del espaciado y estilo */
     margin: 0 5px; /* Espaciado alrededor de los enlaces sociales */
 }
+
 
 
 /* Font Awesome Icons */
