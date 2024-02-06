@@ -96,37 +96,13 @@ nav ul li {
     position: relative;
     padding-left: 40px; /* Adjust based on your layout */
     list-style: none;
-}
-
+/* Existing styles */
 .timeline-item {
-    position: relative;
-    margin-bottom: 20px; /* Space between items */
-}
-
-.timeline-icon {
-    position: absolute;
-    left: 0; /* Align icons to the left */
-    top: 0;
-    background-color: #5c7c7b; /* Change as needed */
-    color: white;
-    border-radius: 50%;
-    padding: 5px 10px;
-    text-align: center;
-    font-size: 1.2em;
-}
-
-.timeline-content {
-    background-color: #f0f0f0;
-    padding: 15px;
-    border-radius: 8px;
-    margin-left: 20px; /* Adjust based on icon size */
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-}
-
-.timeline-content h3 {
-    margin-top: 0;
     color: #333;
     font-size: 1.1em;
+    display: flex;
+    align-items: start;
+    gap: 20px; /* Adjust based on your layout needs */
 }
 
 .timeline-content span {
@@ -135,12 +111,38 @@ nav ul li {
     font-size: 0.9em;
 }
 
-/* Optional: Style for company logos */
+/* Additions for emoji and bullet points */
+.timeline-icon {
+    flex-shrink: 0; /* Prevents the emoji from shrinking */
+    margin-top: 5px; /* Aligns emoji with the top of the content, adjust as necessary */
+}
+
+.timeline-content h3 {
+    margin-top: 0; /* Adjust if needed to align title with emoji */
+}
+
+.timeline-content ul {
+    list-style-type: disc; /* Ensures bullet points are shown */
+    margin: 10px 0 0 20px; /* Adjusts margin and padding for bullet points */
+    padding: 0;
+}
+
+.timeline-content ul li {
+    margin-bottom: 5px; /* Adds space between bullet points */
+}
+
+/* Ensure these new styles do not conflict with your existing CSS. 
+   You might need to adjust margins, padding, and gap values based on your design. */
+
+/* Continue with existing styles without modification */
 .company-logo {
     width: 50px; /* Adjust as needed */
     height: auto;
     margin-top: 10px;
 }
+
+/* Rest of the CSS follows without changes... */
+
 
 /* Slideshow Container */
 .slideshow-container {
