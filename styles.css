@@ -12,14 +12,12 @@ body {
     scrollbar-width: thin;
     scrollbar-color: #888 #f1f1f1;
 }
-
 header {
     background-color: #333;
     color: white;
     padding: 20px 0;
     text-align: center;
 }
-
 header h1 {
     margin: 0;
     font-size: 2.5em;
@@ -27,7 +25,6 @@ header h1 {
     text-transform: uppercase;
     letter-spacing: 3px;
 }
-
 /* Navigation */
 nav ul {
     list-style-type: none;
@@ -37,12 +34,10 @@ nav ul {
     text-align: center;
     overflow: hidden;
 }
-
 nav ul li {
     display: inline-block;
     margin: 0 5px;
 }
-
 .cv-button {
     padding: 10px 15px;
     background-color: #5c7c7b;
@@ -53,11 +48,9 @@ nav ul li {
     transition: background-color 0.3s, color 0.3s;
     text-decoration: none;
 }
-
 .cv-button:hover {
     background-color: #4a6664;
 }
-
 /* Sections */
 .cv-section {
     display: none;
@@ -67,12 +60,10 @@ nav ul li {
     margin: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
 .cv-section:target {
     display: block;
     opacity: 1;
 }
-
 /* Objective Section */
 .objective-container {
     max-width: 800px;
@@ -84,82 +75,69 @@ nav ul li {
     transform: translateY(-20px);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .objective-container:hover {
     transform: translateY(-30px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
-
 /* Education Timeline */
 .education-timeline,
 .experience-timeline {
     position: relative;
     padding-left: 40px; /* Adjust based on your layout */
     list-style: none;
-}
-
+/* Existing styles */
 .timeline-item {
-    position: relative;
-    margin-bottom: 20px; /* Space between items */
-}
-
-.timeline-icon {
-    position: absolute;
-    left: 0; /* Align icons to the left */
-    top: 0;
-    background-color: #5c7c7b; /* Change as needed */
-    color: white;
-    border-radius: 50%;
-    padding: 5px 10px;
-    text-align: center;
-    font-size: 1.2em;
-}
-
-.timeline-content {
-    background-color: #f0f0f0;
-    padding: 15px;
-    border-radius: 8px;
-    margin-left: 20px; /* Adjust based on icon size */
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-}
-
-.timeline-content h3 {
-    margin-top: 0;
     color: #333;
     font-size: 1.1em;
+    display: flex;
+    align-items: start;
+    gap: 20px; /* Adjust based on your layout needs */
 }
-
 .timeline-content span {
     font-style: italic;
     color: #666;
     font-size: 0.9em;
 }
-
-/* Optional: Style for company logos */
+/* Additions for emoji and bullet points */
+.timeline-icon {
+    flex-shrink: 0; /* Prevents the emoji from shrinking */
+    margin-top: 5px; /* Aligns emoji with the top of the content, adjust as necessary */
+}
+.timeline-content h3 {
+    margin-top: 0; /* Adjust if needed to align title with emoji */
+}
+.timeline-content ul {
+    list-style-type: disc; /* Ensures bullet points are shown */
+    margin: 10px 0 0 20px; /* Adjusts margin and padding for bullet points */
+    padding: 0;
+}
+.timeline-content ul li {
+    margin-bottom: 5px; /* Adds space between bullet points */
+}
+/* Ensure these new styles do not conflict with your existing CSS. 
+   You might need to adjust margins, padding, and gap values based on your design. */
+/* Continue with existing styles without modification */
 .company-logo {
     width: 50px; /* Adjust as needed */
     height: auto;
     margin-top: 10px;
 }
-
+/* Rest of the CSS follows without changes... */
 /* Slideshow Container */
 .slideshow-container {
     max-width: 500px; /* Adjust as needed */
     position: relative;
     margin: auto;
 }
-
 /* Hide the images by default */
 .mySlides {
     display: none;
 }
-
 /* Fading animation */
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
 }
-
 @keyframes fade {
     from {
         opacity: 0.4;
@@ -168,56 +146,59 @@ nav ul li {
         opacity: 1;
     }
 }
-
 /* Responsive Image Styling */
 .mySlides img {
     width: 100%;
     height: auto;
 }
-
-/* Footer Styles */
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* New typography */
+    background-color: #333; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Familia tipográfica */
+    display: flex; /* Usa Flexbox */
+    flex-direction: column; /* Orientación vertical */
+    align-items: center; /* Centra elementos horizontalmente */
+    justify-content: center; /* Centra elementos verticalmente */
+    text-align: center; /* Alineación del texto */
+    width: 100%; /* Asegura que el footer ocupe todo el ancho disponible */
 }
 
 footer a {
-    color: #a3c1ad;
-    text-decoration: none;
-    margin: 0 10px;
+    color: #a3c1ad; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado en los enlaces */
+    margin: 0 10px; /* Espaciado alrededor de los enlaces */
 }
-
 footer a:hover {
-    text-decoration: underline;
-    color: #ffffff;
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+    color: #ffffff; /* Color del texto al pasar el mouse */
 }
-
+footer p {
+    margin: 10px 0; /* Espaciado vertical para los párrafos */
+}
+.social-link {
+    display: inline-block; /* Permite mejor control del espaciado y estilo */
+    margin: 0 5px; /* Espaciado alrededor de los enlaces sociales */
+}
 /* Font Awesome Icons */
 .fab {
     margin-right: 5px;
 }
-
 .language-container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px; /* Space between language items */
 }
-
 .language {
     display: flex;
     align-items: center;
 }
-
 .language-flag {
     width: 30px; /* Adjust size as needed */
     height: auto;
     margin-right: 10px;
 }
-
 /* Back To Top Button */
 #backToTop {
     position: fixed;
@@ -232,32 +213,74 @@ footer a:hover {
     text-align: center;
     font-size: 14px;
 }
-
 #backToTop img {
     width: 30px; /* Adjust as needed */
     height: auto;
     vertical-align: middle;
     margin-right: 5px;
 }
-
 #backToTop span {
     vertical-align: middle;
 }
-
 /* Responsive adjustments */
 @media screen and (max-width: 600px) {
     .education-timeline,
     .experience-timeline {
         padding-left: 20px;
     }
-
     .timeline-icon {
         font-size: 1em;
     }
-
     .timeline-content {
         margin-left: 15px;
     }
 }
-
 /* Additional styling as needed */
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em; /* Tamaño más pequeño para el título */
+        letter-spacing: 1px; /* Espaciado de letras ajustado */
+    }
+    nav ul li {
+        display: block; /* Los elementos de navegación se muestran en bloque en lugar de en línea */
+        margin: 5px 0; /* Ajuste de margen para elementos de lista */
+    }
+    .cv-button {
+        padding: 8px 12px; /* Ajuste de padding para hacer botones más accesibles */
+    }
+    .objective-container, .slideshow-container {
+        max-width: 90%; /* Ajuste de ancho máximo para contenedores */
+        margin: 20px auto; /* Centrado y margen ajustado */
+    }
+    .cv-section {
+        margin: 10px; /* Margen reducido para secciones */
+    }
+    .education-timeline, .experience-timeline {
+        padding-left: 15px; /* Padding izquierdo ajustado para líneas de tiempo */
+    }
+    .timeline-icon {
+        font-size: 0.8em; /* Tamaño de fuente ajustado para iconos de la línea de tiempo */
+    }
+    .timeline-content {
+        margin-left: 10px; /* Margen izquierdo ajustado para contenido de la línea de tiempo */
+    }
+ .language-container, .language {
+    flex-direction: column; /* Mantiene la dirección del flex en columna */
+    align-items: flex-start; /* Alinea los elementos al inicio */
+}
+.language-flag {
+    width: 20px; /* Ajusta el ancho de las banderas a un tamaño más pequeño */
+    height: auto; /* Mantiene la proporción de las banderas */
+    margin-bottom: 5px; /* Mantiene el margen inferior */
+}
+/* Reducir el tamaño de fuente de los elementos de idioma para hacerlos más pequeños */
+.language {
+    font-size: 12px; /* Ajusta esto según tus necesidades */
+}
+    /* Ajuste para el botón de volver al inicio */
+    #backToTop {
+        bottom: 10px; /* Posición inferior ajustada */
+        right: 10px; /* Posición derecha ajustada */
+    }
+}
