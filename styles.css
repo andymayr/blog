@@ -328,3 +328,65 @@ footer a:hover {
         right: 10px; /* Posición derecha ajustada */
     }
 }
+/* Global adjustments for a modern look */
+.cv-section {
+    background-color: #ffffff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 800px; /* Consistent container width */
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out; /* Smooth transitions for interaction */
+}
+
+.cv-section:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Timeline specific enhancements */
+.timeline-item {
+    margin-bottom: 30px; /* More space between timeline items for clarity */
+    position: relative; /* For pseudo-elements positioning */
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -8px; /* Adjust according to the actual layout */
+    top: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #5c7c7b; /* Your theme color */
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+.timeline-content {
+    padding-left: 25px; /* Ensure text doesn't overlap the circle */
+}
+
+/* Modernizing header titles within sections */
+.cv-section h2 {
+    color: #333;
+    margin-bottom: 15px; /* Tighter spacing */
+    font-size: 22px; /* Slightly smaller for a refined look */
+    border-bottom: 2px solid #5c7c7b; /* Accent line for separation */
+    display: inline-block; /* For border-bottom effect */
+    padding-bottom: 5px;
+}
+
+/* Adjusting for responsiveness */
+@media screen and (max-width: 768px) {
+    .education-timeline, .experience-timeline {
+        padding-left: 25px; /* Adjusted for smaller screens */
+    }
+
+    .timeline-item::before {
+        left: 0; /* Center align the circle with the content on smaller screens */
+    }
+
+    .timeline-content {
+        padding-left: 35px; /* Adjust if necessary for alignment */
+    }
+}
