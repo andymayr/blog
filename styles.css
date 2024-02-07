@@ -1,4 +1,3 @@
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #eaeaea;
@@ -9,69 +8,52 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    scrollbar-width: thin;
-    scrollbar-color: #888 #f1f1f1;
+    align-items: center; /* Asegura que todos los elementos se centren horizontalmente */
+    text-align: center; /* Alinea el texto de todos los elementos del body al centro */
 }
 
 header {
+    width: 100%; /* Utiliza todo el ancho disponible para asegurar la centración */
     background-color: #333;
     color: white;
     padding: 20px 0;
-    text-align: center;
+    text-align: center; /* Asegura que el texto dentro del header esté centrado */
 }
 
+/* Estilos para el título en el header */
 header h1 {
-    margin: 0;
+    margin: 0 auto; /* Centra el título horizontalmente */
     font-size: 2.5em;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 3px;
 }
 
-/* Navigation */
+
 nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin: 0 auto; /* Centra la navegación en el área disponible */
     background-color: #444;
     text-align: center;
     overflow: hidden;
+    width: 100%; /* Opcional: ajusta según necesidades específicas de diseño */
 }
 
 nav ul li {
     display: inline-block;
-    margin: 0 5px;
 }
 
-.cv-button {
-    padding: 10px 15px;
-    background-color: #5c7c7b;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-    text-decoration: none;
-}
-
-.cv-button:hover {
-    background-color: #4a6664;
-}
-
-/* Sections */
 .cv-section {
-    display: none;
+    display: none; /* Mantiene las secciones ocultas hasta ser activadas */
     padding: 20px;
     background-color: #ffffff;
     border-radius: 5px;
-    margin: 10px 20px;
+    margin: 20px auto; /* Centra las secciones */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: auto; /* O ajusta según el diseño deseado */
 }
 
-.cv-section:target {
-    display: block;
-    opacity: 1;
-}
 
 /* Objective Section */
 .objective-container {
