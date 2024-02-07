@@ -187,9 +187,12 @@ footer a:hover {
     align-items: center;
 }
 .language-flag {
-    width: 30px; /* Adjust size as needed */
-    height: auto;
+    width: 30px; /* Ajusta el tamaño según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: contain; /* Asegura que la imagen se ajuste dentro del contenedor sin distorsionar */
     margin-right: 10px;
+}
+
 }
 /* Back To Top Button */
 #backToTop {
