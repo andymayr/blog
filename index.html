@@ -6,9 +6,8 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-       */ /* CSS styles will go here 
+        /* CSS styles will go here */
     </style>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
     <header>
@@ -16,6 +15,7 @@
     </header>
     <div class="greeting-contact-section">
     <div id="personalizedGreeting"></div>
+    <a href="mailto:mayerandreas3@gmail.com" class="contact-me-button">Contact Me</a>
 </div>
     <nav>
         <ul>
@@ -48,60 +48,43 @@
 <section id="experience" class="cv-section">
     <h2>Experience</h2>
     <div class="experience-timeline">
-        <!-- Change & Sustainability Ambassador | Amazon -->
         <div class="timeline-item">
-            <span class="timeline-icon">📦</span>
+            <div class="timeline-icon">📦</div>
             <div class="timeline-content">
                 <h3>Change & Sustainability Ambassador | Amazon</h3>
                 <span>OCT.22-JUN.23</span>
-                <ul>
-                    <li>Collaborated with stakeholders on waste and energy management sustainability initiatives.</li>
-                    <li>Conducted research contributing to a thesis on sustainable fulfillment warehousing.</li>
-                    <li>Recognized in OTZ-newspaper for expertise in sustainable logistics practices.</li>
-                </ul>
+                <p>Collaborated with stakeholders to optimize waste and energy management sustainability initiatives. Conducted research contributing to a thesis on sustainable fulfillment warehousing, enhancing environmental logistics operations. Recognized in an OTZ-newspaper article for expertise in sustainable practices within logistics.</p>
             </div>
         </div>
-        <!-- Project Management Intern | Amazon -->
         <div class="timeline-item">
-            <span class="timeline-icon">📦</span>
+            <div class="timeline-icon">📦</div>
             <div class="timeline-content">
                 <h3>Project Management Intern | Amazon</h3>
-                <span>APR.22-AUG.22 | Gera, Germany</span>
-                <ul>
-                    <li>Coordinated 20 different projects in an Amazon Warehouse to improve working conditions and employee satisfaction.</li>
-                    <li>Contacted external companies for offers, including Kaiser + Kraft & Mercateo.</li>
-                    <li>Presented weekly meetings to site leadership, detailing project progress.</li>
-                </ul>
+                <span>APR.22-AUG.22</span>
+                <p>Coordinated 20 different projects in an Amazon Warehouse in Gera, Germany, to improve working conditions and employee satisfaction. Contacted external companies to request offers such as Kaiser + Kraft & Mercateo. Presented weekly meetings to site leadership, including specifics on project progress.</p>
+                <!-- Placeholder for company logo -->
             </div>
         </div>
-        <!-- Part-time Student Worker | Zenjob -->
         <div class="timeline-item">
-            <span class="timeline-icon">👔</span>
+            <div class="timeline-icon">👔</div>
             <div class="timeline-content">
                 <h3>Part-time Student Worker | Zenjob</h3>
                 <span>OCT.20-OCT.21</span>
-                <ul>
-                    <li>Performed diverse administrative and sales tasks in Munich's student job program.</li>
-                    <li>Roles included Covid Hostess at Messe München and cashier/sales at Edeka, Primark, and Superdry.</li>
-                </ul>
+                <p>Performed diverse administrative and sales tasks in Munich's student job program. Roles included Covid Hostess at Messe München and cashier/sales at Edeka, Primark, and Superdry.</p>
+                <!-- Placeholder for company logo -->
             </div>
         </div>
-        <!-- Part-time Admin Support Staff | Clínica especialista en odontopediatría y láser dental -->
         <div class="timeline-item">
-            <span class="timeline-icon">🦷</span>
+            <div class="timeline-icon">🦷</div>
             <div class="timeline-content">
                 <h3>Part-time Admin Support Staff | Clínica especialista en odontopediatría y láser dental</h3>
                 <span>AUG.17-SEP.19 & OCT.23-FEB.24</span>
-                <ul>
-                    <li>Provided administrative support in a family-owned dental practice.</li>
-                    <li>Managed social media, patient KPI reports, and invoicing.</li>
-                </ul>
+                <p>Provided administrative support in a family-owned dental practice. Managed social media, patient KPI reports, and invoicing.</p>
+                <!-- Placeholder for company logo -->
             </div>
         </div>
     </div>
 </section>
-
-
 <section id="education" class="cv-section">
         <h2>Education</h2>
         <div class="education-timeline">
@@ -149,9 +132,7 @@
         </div>
     </div>
 </div>
-
     </section>
-
 <section id="skills" class="cv-section">
     <h2>Skills & Hobbies</h2>
     <div class="skills-accordion">
@@ -183,7 +164,6 @@
         <!-- Additional accordion items here -->
     </div>
 </section>
-
 <section id="activities" class="cv-section">
     <h2>Activities</h2>
     <div class="activities-container">
@@ -212,7 +192,6 @@
         </div>
     </div>
 </section>
-
 <section id="languages" class="cv-section">
     <h2>Languages</h2>
     <div class="language-container">
@@ -236,8 +215,6 @@
         </div>
     </div>
 </section>
-
-
 <footer>
     <p>Contact Information: <a href="mailto:mayerandreas3@gmail.com">mayerandreas3@gmail.com</a></p>
     <p>Phone: +52 2222393453</p>
@@ -285,27 +262,60 @@
     font-size: 24px;
     margin-bottom: 20px;
 }
+
+.contact-me-button {
+    display: inline-block;
+    background-color: #007bff; /* Change as per your color scheme */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.contact-me-button:hover {
+    background-color: #0056b3;
+}
+
         window.onload = function() {
     const greetings = {
         spanish: ["Hola", "¿Cómo estás?"],
         german: ["Hallo", "Wie geht's?"],
         english: ["Hello", "How are you doing?"]
     };
-
     // Set initial text for testing visibility
     document.getElementById('spanish-text').textContent = greetings.spanish[0];
     document.getElementById('german-text').textContent = greetings.german[0];
     document.getElementById('english-text').textContent = greetings.english[0];
-
     let current = 0;
-
     setInterval(() => {
         current = (current + 1) % greetings.spanish.length;
         document.getElementById('spanish-text').textContent = greetings.spanish[current];
         document.getElementById('german-text').textContent = greetings.german[current];
         document.getElementById('english-text').textContent = greetings.english[current];
     }, 3000); // Change text every 3 seconds
+};
 
+    </script>
+    window.onload = function() {
+    // Existing window.onload code here...
+
+    // Add this new code for greeting
+    var greetingText = document.getElementById('personalizedGreeting');
+    var date = new Date();
+    var hour = date.getHours();
+
+    if(hour < 12) {
+        greetingText.innerHTML = 'Good Morning! Welcome to my CV.';
+    } else if(hour < 18) {
+        greetingText.innerHTML = 'Good Afternoon! Welcome to my CV.';
+    } else {
+        greetingText.innerHTML = 'Good Evening! Welcome to my CV.';
+    }
+};
+
+<script>
     document.querySelectorAll('.accordion-button').forEach(button => {
         button.addEventListener('click', function() {
             // Toggle the visibility of the next sibling element (accordion content)
@@ -314,7 +324,5 @@
         });
     });
 </script>
-
-
 </body>
 </html>
