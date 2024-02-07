@@ -160,32 +160,40 @@ nav ul li {
 }
 
 footer {
-    background-color: #333; /* Color de fondo */
-    color: #fff; /* Color del texto */
-    padding: 20px; /* Espaciado interno */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Familia tipográfica */
-    display: flex; /* Usa Flexbox */
-    flex-direction: column; /* Orientación vertical */
-    align-items: center; /* Centra elementos horizontalmente */
-    justify-content: center; /* Centra elementos verticalmente */
-    text-align: center; /* Alineación del texto */
-    width: 100%; /* Asegura que el footer ocupe todo el ancho disponible */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center items horizontally in the container */
+    justify-content: center; /* Center items vertically if there's extra space */
+    text-align: center; /* Ensure text is centered as well */
+    width: 100%; /* Ensure footer takes full width */
+    padding: 20px; /* Add some padding for spacing */
+    background-color: #333; /* Your chosen footer background */
+    color: #fff; /* Text color */
 }
 
+footer a, footer p {
+    width: 100%; /* Make sure anchor tags and paragraphs take full width to respect text-align */
+    text-align: center; /* Reinforce text alignment */
+    margin: 5px 0; /* Provide some vertical spacing */
+}
+
+/* If you are using flex or inline styles for social links/icons, ensure they're centered */
+footer .social-link, footer .fab {
+    display: inline-block; /* Or flex, if you're using flexbox for layout */
+    /* Centering for icons or additional elements */
+}
+
+/* Additional styles for links to remove underline and change color */
 footer a {
-    color: #a3c1ad; /* Color de los enlaces */
-    text-decoration: none; /* Sin subrayado en los enlaces */
-    margin: 0 10px; /* Espaciado alrededor de los enlaces */
+    color: #a3c1ad; /* Adjust based on your preference */
+    text-decoration: none;
 }
 
 footer a:hover {
-    text-decoration: underline; /* Subrayado al pasar el mouse */
-    color: #ffffff; /* Color del texto al pasar el mouse */
+    text-decoration: underline; /* Style for hover state */
+    color: #ffffff; /* Adjust based on your preference */
 }
 
-footer p {
-    margin: 10px 0; /* Espaciado vertical para los párrafos */
-}
 
 .social-link {
     display: inline-block; /* Permite mejor control del espaciado y estilo */
