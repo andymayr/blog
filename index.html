@@ -249,51 +249,8 @@
             });
         });
     </script>
-   <script>
-       .greeting-contact-section {
-    text-align: center;
-    margin: 20px 0;
-}
-
-#personalizedGreeting {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.contact-me-button {
-    display: inline-block;
-    background-color: #007bff; /* Change as per your color scheme */
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.contact-me-button:hover {
-    background-color: #0056b3;
-}
-
-        window.onload = function() {
-    const greetings = {
-        spanish: ["Hola", "¿Cómo estás?"],
-        german: ["Hallo", "Wie geht's?"],
-        english: ["Hello", "How are you doing?"]
-    };
-    // Set initial text for testing visibility
-    document.getElementById('spanish-text').textContent = greetings.spanish[0];
-    document.getElementById('german-text').textContent = greetings.german[0];
-    document.getElementById('english-text').textContent = greetings.english[0];
-    let current = 0;
-    setInterval(() => {
-        current = (current + 1) % greetings.spanish.length;
-        document.getElementById('spanish-text').textContent = greetings.spanish[current];
-        document.getElementById('german-text').textContent = greetings.german[current];
-        document.getElementById('english-text').textContent = greetings.english[current];
-    }, 3000); // Change text every 3 seconds
-
-<script>
+    
+  <script>
     document.querySelectorAll('.accordion-button').forEach(button => {
         button.addEventListener('click', function() {
             // Toggle the visibility of the next sibling element (accordion content)
@@ -302,5 +259,20 @@
         });
     });
 </script>
+    <script>
+  function centerFooterContent() {
+    var footer = document.querySelector('footer'); // Select the footer element
+    if (footer) { // Check if the footer exists
+      footer.style.display = 'flex'; // Set the display to flex
+      footer.style.flexDirection = 'column'; // Align items in a column
+      footer.style.justifyContent = 'center'; // Center items vertically
+      footer.style.alignItems = 'center'; // Center items horizontally
+      footer.style.textAlign = 'center'; // Center text
+    }
+  }
+
+  window.addEventListener('load', centerFooterContent); // Run the function when the window loads
+</script>
+
 </body>
 </html>
