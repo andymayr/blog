@@ -152,20 +152,27 @@ nav ul li {
     height: auto;
 }
 footer {
-    background-color: #333; /* Color de fondo */
-    color: #fff; /* Color del texto */
-    padding: 20px; /* Espaciado interno */
-    text-align: center; /* Alineación del texto al centro */
+    background-color: #333; /* Color de fondo oscuro */
+    color: #fff; /* Texto blanco para contraste */
+    padding: 20px 0; /* Espaciado superior e inferior para dar espacio al contenido */
+    text-align: center; /* Alinea el texto y cualquier elemento en línea al centro */
+    width: 100%; /* Asegura que el footer ocupe todo el ancho disponible */
 }
 
 footer a {
-    color: #a3c1ad; /* Color de los enlaces */
-    text-decoration: none; /* Sin subrayado en los enlaces */
+    color: #a3c1ad; /* Color suave para los enlaces */
+    text-decoration: none; /* No subrayar los enlaces */
+    margin: 0 10px; /* Espacio alrededor de los enlaces */
 }
 
 footer a:hover {
-    text-decoration: underline; /* Subrayado al pasar el mouse */
-    color: #ffffff; /* Color del texto al pasar el mouse */
+    text-decoration: underline; /* Subrayar en hover para mejor accesibilidad */
+    color: #ffffff; /* Blanco para el hover */
+}
+
+/* Opcional: Si tu footer incluye elementos bloque como <p>, y quieres asegurar su centrado vertical */
+footer p {
+    margin: 10px 0; /* Margen superior e inferior para evitar que los elementos se peguen entre sí */
 }
 
 .social-link {
