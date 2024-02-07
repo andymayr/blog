@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #eaeaea;
@@ -8,52 +9,69 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    align-items: center; /* Asegura que todos los elementos se centren horizontalmente */
-    text-align: center; /* Alinea el texto de todos los elementos del body al centro */
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
 }
 
 header {
-    width: 100%; /* Utiliza todo el ancho disponible para asegurar la centración */
     background-color: #333;
     color: white;
     padding: 20px 0;
-    text-align: center; /* Asegura que el texto dentro del header esté centrado */
+    text-align: center;
 }
 
-/* Estilos para el título en el header */
 header h1 {
-    margin: 0 auto; /* Centra el título horizontalmente */
+    margin: 0;
     font-size: 2.5em;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 3px;
 }
 
-
+/* Navigation */
 nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 0 auto; /* Centra la navegación en el área disponible */
+    margin: 0;
     background-color: #444;
     text-align: center;
     overflow: hidden;
-    width: 100%; /* Opcional: ajusta según necesidades específicas de diseño */
 }
 
 nav ul li {
     display: inline-block;
+    margin: 0 5px;
 }
 
+.cv-button {
+    padding: 10px 15px;
+    background-color: #5c7c7b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+.cv-button:hover {
+    background-color: #4a6664;
+}
+
+/* Sections */
 .cv-section {
-    display: none; /* Mantiene las secciones ocultas hasta ser activadas */
+    display: none;
     padding: 20px;
     background-color: #ffffff;
     border-radius: 5px;
-    margin: 20px auto; /* Centra las secciones */
+    margin: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: auto; /* O ajusta según el diseño deseado */
 }
 
+.cv-section:target {
+    display: block;
+    opacity: 1;
+}
 
 /* Objective Section */
 .objective-container {
@@ -78,13 +96,37 @@ nav ul li {
     position: relative;
     padding-left: 40px; /* Adjust based on your layout */
     list-style: none;
-/* Existing styles */
+}
+
 .timeline-item {
+    position: relative;
+    margin-bottom: 20px; /* Space between items */
+}
+
+.timeline-icon {
+    position: absolute;
+    left: 0; /* Align icons to the left */
+    top: 0;
+    background-color: #5c7c7b; /* Change as needed */
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.timeline-content {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    margin-left: 20px; /* Adjust based on icon size */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h3 {
+    margin-top: 0;
     color: #333;
     font-size: 1.1em;
-    display: flex;
-    align-items: start;
-    gap: 20px; /* Adjust based on your layout needs */
 }
 
 .timeline-content span {
@@ -93,38 +135,12 @@ nav ul li {
     font-size: 0.9em;
 }
 
-/* Additions for emoji and bullet points */
-.timeline-icon {
-    flex-shrink: 0; /* Prevents the emoji from shrinking */
-    margin-top: 5px; /* Aligns emoji with the top of the content, adjust as necessary */
-}
-
-.timeline-content h3 {
-    margin-top: 0; /* Adjust if needed to align title with emoji */
-}
-
-.timeline-content ul {
-    list-style-type: disc; /* Ensures bullet points are shown */
-    margin: 10px 0 0 20px; /* Adjusts margin and padding for bullet points */
-    padding: 0;
-}
-
-.timeline-content ul li {
-    margin-bottom: 5px; /* Adds space between bullet points */
-}
-
-/* Ensure these new styles do not conflict with your existing CSS. 
-   You might need to adjust margins, padding, and gap values based on your design. */
-
-/* Continue with existing styles without modification */
+/* Optional: Style for company logos */
 .company-logo {
     width: 50px; /* Adjust as needed */
     height: auto;
     margin-top: 10px;
 }
-
-/* Rest of the CSS follows without changes... */
-
 
 /* Slideshow Container */
 .slideshow-container {
@@ -159,48 +175,25 @@ nav ul li {
     height: auto;
 }
 
+/* Footer Styles */
 footer {
-    display: flex;
-    flex-direction: column; /* Stack children vertically */
-    align-items: center; /* Center items horizontally in the container */
-    justify-content: center; /* Center items vertically if there's extra space */
-    text-align: center; /* Ensure text is centered as well */
-    width: 100%; /* Ensure footer takes full width */
-    padding: 20px; /* Add some padding for spacing */
-    background-color: #333; /* Your chosen footer background */
-    color: #fff; /* Text color */
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* New typography */
 }
 
-footer a, footer p {
-    width: 100%; /* Make sure anchor tags and paragraphs take full width to respect text-align */
-    text-align: center; /* Reinforce text alignment */
-    margin: 5px 0; /* Provide some vertical spacing */
-}
-
-/* If you are using flex or inline styles for social links/icons, ensure they're centered */
-footer .social-link, footer .fab {
-    display: inline-block; /* Or flex, if you're using flexbox for layout */
-    /* Centering for icons or additional elements */
-}
-
-/* Additional styles for links to remove underline and change color */
 footer a {
-    color: #a3c1ad; /* Adjust based on your preference */
+    color: #a3c1ad;
     text-decoration: none;
+    margin: 0 10px;
 }
 
 footer a:hover {
-    text-decoration: underline; /* Style for hover state */
-    color: #ffffff; /* Adjust based on your preference */
+    text-decoration: underline;
+    color: #ffffff;
 }
-
-
-.social-link {
-    display: inline-block; /* Permite mejor control del espaciado y estilo */
-    margin: 0 5px; /* Espaciado alrededor de los enlaces sociales */
-}
-
-
 
 /* Font Awesome Icons */
 .fab {
@@ -268,125 +261,3 @@ footer a:hover {
 }
 
 /* Additional styling as needed */
-/* Responsive adjustments */
-@media screen and (max-width: 768px) {
-    header h1 {
-        font-size: 1.5em; /* Tamaño más pequeño para el título */
-        letter-spacing: 1px; /* Espaciado de letras ajustado */
-    }
-
-    nav ul li {
-        display: block; /* Los elementos de navegación se muestran en bloque en lugar de en línea */
-        margin: 5px 0; /* Ajuste de margen para elementos de lista */
-    }
-
-    .cv-button {
-        padding: 8px 12px; /* Ajuste de padding para hacer botones más accesibles */
-    }
-
-    .objective-container, .slideshow-container {
-        max-width: 90%; /* Ajuste de ancho máximo para contenedores */
-        margin: 20px auto; /* Centrado y margen ajustado */
-    }
-
-    .cv-section {
-        margin: 10px; /* Margen reducido para secciones */
-    }
-
-    .education-timeline, .experience-timeline {
-        padding-left: 15px; /* Padding izquierdo ajustado para líneas de tiempo */
-    }
-
-    .timeline-icon {
-        font-size: 0.8em; /* Tamaño de fuente ajustado para iconos de la línea de tiempo */
-    }
-
-    .timeline-content {
-        margin-left: 10px; /* Margen izquierdo ajustado para contenido de la línea de tiempo */
-    }
-
- .language-container, .language {
-    flex-direction: column; /* Mantiene la dirección del flex en columna */
-    align-items: flex-start; /* Alinea los elementos al inicio */
-}
-
-.language-flag {
-    width: 20px; /* Ajusta el ancho de las banderas a un tamaño más pequeño */
-    height: auto; /* Mantiene la proporción de las banderas */
-    margin-bottom: 5px; /* Mantiene el margen inferior */
-}
-
-/* Reducir el tamaño de fuente de los elementos de idioma para hacerlos más pequeños */
-.language {
-    font-size: 12px; /* Ajusta esto según tus necesidades */
-}
-
-
-    /* Ajuste para el botón de volver al inicio */
-    #backToTop {
-        bottom: 10px; /* Posición inferior ajustada */
-        right: 10px; /* Posición derecha ajustada */
-    }
-}
-/* Global adjustments for a modern look */
-.cv-section {
-    background-color: #ffffff;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    max-width: 800px; /* Consistent container width */
-    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out; /* Smooth transitions for interaction */
-}
-
-.cv-section:hover {
-    transform: translateY(-5px); /* Slight lift effect on hover */
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-}
-
-/* Timeline specific enhancements */
-.timeline-item {
-    margin-bottom: 30px; /* More space between timeline items for clarity */
-    position: relative; /* For pseudo-elements positioning */
-}
-
-.timeline-item::before {
-    content: '';
-    position: absolute;
-    left: -8px; /* Adjust according to the actual layout */
-    top: 0;
-    height: 16px;
-    width: 16px;
-    background-color: #5c7c7b; /* Your theme color */
-    border-radius: 50%;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
-}
-
-.timeline-content {
-    padding-left: 25px; /* Ensure text doesn't overlap the circle */
-}
-
-/* Modernizing header titles within sections */
-.cv-section h2 {
-    color: #333;
-    margin-bottom: 15px; /* Tighter spacing */
-    font-size: 22px; /* Slightly smaller for a refined look */
-    border-bottom: 2px solid #5c7c7b; /* Accent line for separation */
-    display: inline-block; /* For border-bottom effect */
-    padding-bottom: 5px;
-}
-
-/* Adjusting for responsiveness */
-@media screen and (max-width: 768px) {
-    .education-timeline, .experience-timeline {
-        padding-left: 25px; /* Adjusted for smaller screens */
-    }
-
-    .timeline-item::before {
-        left: 0; /* Center align the circle with the content on smaller screens */
-    }
-
-    .timeline-content {
-        padding-left: 35px; /* Adjust if necessary for alignment */
-    }
-}
