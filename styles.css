@@ -183,22 +183,34 @@ footer p {
 .fab {
     margin-right: 5px;
 }
+.cv-section {
+    margin: 20px 0; /* Adds spacing around each section for better separation */
+}
+
 .language-container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px; /* Space between language items */
+    flex-wrap: wrap; /* Allows items to wrap in smaller screens */
 }
+
 .language {
     display: flex;
-    align-items: center;
+    flex-direction: column; /* Stacks the language name and greeting text */
+    align-items: center; /* Centers the items horizontally */
+    text-align: center; /* Ensures text is centered within each language block */
 }
-.language-flag {
-    width: 30px; /* Ajusta el tamaño según sea necesario */
-    height: auto; /* Mantiene la proporción de la imagen */
-    object-fit: contain; /* Asegura que la imagen se ajuste dentro del contenedor sin distorsionar */
-    margin-right: 10px;
+
+.language-name {
+    font-weight: bold; /* Emphasizes the language name */
+    margin-bottom: 5px; /* Adds a little space between the language name and greeting */
 }
+
+.dynamic-text {
+    font-style: italic; /* Differentiates the greeting text */
+}
+
 
 }
 /* Back To Top Button */
@@ -267,22 +279,5 @@ footer p {
     .timeline-content {
         margin-left: 10px; /* Margen izquierdo ajustado para contenido de la línea de tiempo */
     }
- .language-container, .language {
-    flex-direction: column; /* Mantiene la dirección del flex en columna */
-    align-items: flex-start; /* Alinea los elementos al inicio */
-}
-.language-flag {
-    width: 20px; /* Ajusta el ancho de las banderas a un tamaño más pequeño */
-    height: auto; /* Mantiene la proporción de las banderas */
-    margin-bottom: 5px; /* Mantiene el margen inferior */
-}
-/* Reducir el tamaño de fuente de los elementos de idioma para hacerlos más pequeños */
-.language {
-    font-size: 12px; /* Ajusta esto según tus necesidades */
-}
-    /* Ajuste para el botón de volver al inicio */
-    #backToTop {
-        bottom: 10px; /* Posición inferior ajustada */
-        right: 10px; /* Posición derecha ajustada */
-    }
+
 }
