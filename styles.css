@@ -155,7 +155,7 @@ footer {
     background-color: #333; /* Color de fondo oscuro */
     color: #fff; /* Texto blanco para contraste */
     padding: 20px 0; /* Espaciado superior e inferior para dar espacio al contenido */
-    text-align: center; /* Alinea el texto y cualquier elemento en línea al centro */
+    text-align: center !important;
     width: 100%; /* Asegura que el footer ocupe todo el ancho disponible */
 }
 
