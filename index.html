@@ -315,6 +315,24 @@
     });
 </script>
 
+<script>
+        // Example: Dynamically adjust the footer style using JavaScript
+        // This is more for illustrative purposes; CSS is usually sufficient and recommended for styling.
+        
+        function centerFooterContent() {
+            const footer = document.querySelector('footer');
+            // Ensuring the footer exists
+            if (footer) {
+                footer.style.display = 'flex';
+                footer.style.justifyContent = 'center';
+                footer.style.alignItems = 'center';
+                footer.style.flexDirection = 'column';
+                footer.style.textAlign = 'center';
+            }
+        }
 
+        // Call the function to center the footer content when the page loads
+        window.onload = centerFooterContent;
+    </script>
 </body>
 </html>
